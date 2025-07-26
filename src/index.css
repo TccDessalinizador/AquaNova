@@ -3,3 +3,8 @@
 @theme {
   --font-display: "Istok Web", sans-serif;
 }
+
+select {
+  -webkit-appearance: none; /* Removes default Safari/Chrome styling */
+  /* Other styles */
+}
