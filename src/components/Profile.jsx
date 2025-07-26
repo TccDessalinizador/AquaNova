@@ -1,13 +1,13 @@
-import LogoSite from '../assets/logo tcc 2.jpg'
+import LogoSite from '../assets/LogoAquaNova.png'
 import FotodePerfil from '../assets/FotodePerfil.jpg'
 import Edit from '../assets/Edit.jpg'
 
 export function Profile() {
     return (
         <div>
-            <div id="header" class="h-[4.25rem] mb-[1.4rem] flex bg-[#0C0C0C]">
-                <img src={LogoSite} alt="" class=""/>
-                <img src={FotodePerfil} alt="" class="rounded-[100%]"/>
+            <div id="header" class="h-[4.25rem] mb-[1.4rem] flex bg-[#0C0C0C] justify-between">
+                <img src={LogoSite} alt="" class="w-[4rem] h-[4rem]"/>
+                <img src={FotodePerfil} alt="" class="rounded-[100%] w-[3rem] h-[3rem] mr-[0.3rem] mt-[0.5rem]"/>
             </div>
 
             <div id="pagina" class="flex flex-col justify-center self-center">
