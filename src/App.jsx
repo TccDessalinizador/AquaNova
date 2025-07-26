@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 export function App() {
   return (
     <div>
-      <p class="bg-blue-500">OI</p>
+      <p class="bg-blue-500">OI, oi</p>
     </div>
   )
 }
