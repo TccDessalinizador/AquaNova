@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-display: "Istok Web", sans-serif;
+  --font-inter: "Inter", "sans-serif";
   --text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75)
+  --breakpoint-xs: 22.5rem;
 }
 
 select {
