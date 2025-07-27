@@ -78,10 +78,12 @@ export function Jogo() {
                     <img src={JogoImagem} alt="" class="flex w-[24.8rem] h-[14.5rem] self-center rounded-[4rem]"/>
                 </div>
 
-                <p class="px-[1.15rem] font-bold text-[1.25rem] text-white mb-[2rem]">Em um futuro próximo, o mundo enfrenta uma crise hídrica sem precedentes. Em meio ao caos, o brilhante cientista Dr. Elias desenvolve uma máquina revolucionária capaz de dessalinizar água usando energia solar — uma invenção que pode salvar milhões de vidas. Porém, essa tecnologia atrai a atenção de grupos sombrios, dispostos a tudo para roubá-la e usá-la em benefício próprio. <br />
+                <p class="px-[1.15rem] font-bold text-[1.25rem] text-white mb-[2rem] text-shadow-2xs">Em um futuro próximo, o mundo enfrenta uma crise hídrica sem precedentes. Em meio ao caos, o brilhante cientista Dr. Elias desenvolve uma máquina revolucionária capaz de dessalinizar água usando energia solar — uma invenção que pode salvar milhões de vidas. Porém, essa tecnologia atrai a atenção de grupos sombrios, dispostos a tudo para roubá-la e usá-la em benefício próprio. <br />
                 Agora, Dr. Elias e seus fiéis ajudantes devem proteger o dessalinizador Solaris, enfrentando sabotagens, espiões e desafios ambientais. Embarque nessa jornada estratégica onde cada decisão conta: defenda a invenção, explore conhecimentos reais sobre dessalinização e energia solar, e descubra quem são os verdadeiros aliados nessa corrida pela salvação da água.</p>
 
-                <button class="w-[7.5rem] h-[3rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[0.75rem] text-[#0C0C0C] font-bold ">Jogue agora</button>
+                <div class="flex items-center justify-center self-center w-[100%]">
+                    <button class="w-[7.5rem] h-[3rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[0.75rem] text-[#0C0C0C] font-bold">Jogue agora</button>
+                </div>
 
                 <p>video</p>
             </div>
