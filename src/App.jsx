@@ -6,11 +6,12 @@ import { Jogo } from './components/Jogo.jsx'
 import { Header } from './components/Header.jsx'
 import { QuemSomos } from './components/QuemSomos.jsx'
 import { Referencias } from './components/Referencias.jsx'
+import { Instrucoes } from './components/Instrucoes.jsx'
 
 export function App() {
   return (
     <div>
-      <Referencias />
+      <Instrucoes />
     </div>
   )
 }
