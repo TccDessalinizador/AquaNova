@@ -6,6 +6,7 @@
   --font-inter: "Inter", "sans-serif";
   --text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75)
   --breakpoint-xs: 22.5rem;
+  --height: calc(100vh - 4rem);
 }
 
 select {
