@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
+
 
 @theme {
   --font-display: "Istok Web", sans-serif;
   --font-inter: "Inter", "sans-serif";
+  --font-istok: "Istok Web", "sans-serif";
   --text-shadow-xl: 0 4px 4px rgba(0, 0, 0, 0.75);
   --background-fade: linear-gradient(to bottom, #1a1a1a, #1f1f1f, #2a2a2a, #333333);
 

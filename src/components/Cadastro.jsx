@@ -1,5 +1,6 @@
 import LogoSite from "../assets/logo tcc-black 1.jpg"
 import Parabens from '../assets/cadastroImagem.jpg'
+import { Link } from 'react-router-dom'
 
 export function Cadastro() {
     return (

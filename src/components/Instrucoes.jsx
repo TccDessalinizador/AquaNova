@@ -5,6 +5,7 @@ import tres from '../assets/tres.svg'
 import instrucao1 from '../assets/instrucao1.png'
 import instrucao2 from '../assets/instrucao2.png'
 import instrucao3 from '../assets/instrucao3.png'
+import { Link } from 'react-router-dom'
 
 
 export function Instrucoes() {

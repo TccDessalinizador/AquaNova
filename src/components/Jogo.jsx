@@ -1,5 +1,7 @@
 import JogoImagem from '../assets/jogo.jpg'
 import { Header } from './Header.jsx'
+import { Link } from 'react-router-dom'
+
 export function Jogo() {
     return (
         <div class="bg-blue-500 ">

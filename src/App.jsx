@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Login } from './components/login.jsx'
+import { Login } from './components/Login.jsx'
 import { Cadastro } from './components/Cadastro.jsx'
 import { Profile } from './components/Profile.jsx'
 import { Jogo } from './components/Jogo.jsx'
@@ -7,11 +7,26 @@ import { Header } from './components/Header.jsx'
 import { QuemSomos } from './components/QuemSomos.jsx'
 import { Referencias } from './components/Referencias.jsx'
 import { Instrucoes } from './components/Instrucoes.jsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export function App() {
   return (
-    <div>
-      <Instrucoes />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Login />}/>
+
+        <Route path='/instrucoes' element={<Instrucoes />}/>
+        <Route path='/componentes' element={<Jogo />}/>
+        <Route path='/jogo' element={<Jogo />}/>
+        <Route path='/quemsomos' element={<QuemSomos />}/>
+        <Route path='/profile' element={<Profile />}/>
+
+        <Route path='/cadastro' element={<Cadastro />}/>
+
+
+
+      </Routes>
+    </BrowserRouter>
   )
 }

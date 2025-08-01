@@ -1,15 +1,17 @@
 import Logo from '../assets/logo tcc 3.png'
 import Foto from '../assets/FotodePerfil.jpg'
+import { Link } from 'react-router-dom'
 
 export function Header() {
+
     return (
         <div class="w-[100%] h-[4rem] lg:h-[5rem] flex flex-row justify-between bg-[#0C0C0C] px-[0.4rem] pl-[0.5rem]">
 
             <div id="ancoras" class='lg:w-[23rem] lg:ml-[5rem] flex flex-row justify-between lg:gap-[1rem] lg:mr-[4.5rem] items-center font-inter'>
-                <p class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[0.3rem] lg:mx-[2rem] font-inter lg:mr-[3rem]">Instruções</p>
-                <p class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[-3em] invisible lg:visible lg:ml[0] font-inter lg:mr-[1rem]">Componentes</p>
-                <p class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[-3rem] invisible lg:visible lg:ml-[0] font-inter lg:mr-[1rem]">Jogo</p>
-                <a href='#' class="text-white my-[1rem] lg:w-[10rem] h-[2rem] font-light text-[0.75rem] flex items-center lg:visible font-inter">Quem somos</a> 
+                <Link to={"/instrucoes"} class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[0.3rem] lg:mx-[2rem] font-inter lg:mr-[3rem]">Instruções</Link>
+                <Link to={"/componentes"} class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[-3em] invisible lg:visible lg:ml[0] font-inter lg:mr-[1rem]">Componentes</Link>
+                <Link to={"/jogo"} class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[-3rem] invisible lg:visible lg:ml-[0] font-inter lg:mr-[1rem]">Jogo</Link>
+                <Link to={"/quemsomos"} class="text-white my-[1rem] lg:w-[10rem] h-[2rem] font-light text-[0.75rem] flex items-center lg:visible font-inter">Quem somos</Link> 
             </div>
 
             <img src={Logo} alt="" class="h-[6rem] w-[7rem] lg:mt-[.5rem] flex justify-center" />
@@ -74,7 +76,7 @@ export function Header() {
 
                 <button class="text-[#0C0C0C] font-light h-[2rem] w-[5rem] text-[0.75rem] border-1 border-[rgba(90, 90, 90, 0.50)] bg-white my-[1rem] rounded-[0.75rem] mr-[1rem] lg:w-[10rem] lg:h-[2.5rem] font-inter">Download</button>
                 
-                <img src={Foto} alt="" class="rounded-[100%] h-[2.5rem] h-[2.5rem] mt-[0.75rem] lg:mt-[0.5rem] lg:w-[3.5rem] lg:h-[3.5rem] lg:mr-[0.5rem]" />
+                <Link to={"/profile"}><img src={Foto} alt="" class="rounded-[100%] h-[2.5rem] h-[2.5rem] mt-[0.75rem] lg:mt-[0.5rem] lg:w-[3.5rem] lg:h-[3.5rem] lg:mr-[0.5rem]" /></Link>
             </div>
 
 
