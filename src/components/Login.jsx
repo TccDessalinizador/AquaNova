@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export function Login() {
     return (
         <div class="bg-white flex flex-col lg:flex-row">
-            {/* <img src={background} alt="" class="lg:w-[60vw] lg:h-[100vh] w-[0] h-[0] invisible lg:visible"/> */}
+            <img src={background} alt="" class="lg:w-[60vw] lg:h-[100vh] w-[0] h-[0] invisible lg:visible"/>
 
             <div id="pagina" class="lg:px-[4.25rem] px-[1.2rem] flex flex-col items-center lg:w-[40vw]">
 
@@ -19,7 +19,7 @@ export function Login() {
                     <input type="password" placeholder="Insira a senha" id="senha" class="bg-[#D9D9D9] h-[3.35rem] w-100% mb-[1rem] rounded-[1.125rem] px-[1rem]"/>
 
                     {/* Falta toogle */}
-                    <span class="mb-[3.7rem] lg:mb-[7rem] text-3x1">Lembre-me</span>
+                    <span class="mb-[3.7rem] lg:mb-[4rem] text-3x1">Lembre-me</span>
 
                     <button class="flex items-center self-center justify-center bg-[#0C0C0C] text-white w-[12.5rem] h-[3rem] mb-[2rem] rounded-[0.625rem]">Login</button>
 
