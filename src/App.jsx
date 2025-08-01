@@ -8,6 +8,7 @@ import { QuemSomos } from './components/QuemSomos.jsx'
 import { Referencias } from './components/Referencias.jsx'
 import { Instrucoes } from './components/Instrucoes.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Componentes } from './components/Componentes.jsx'
 import { Link } from 'react-router-dom'
 
 export function App() {
@@ -17,7 +18,7 @@ export function App() {
         <Route path='/' element={<Login />}/>
 
         <Route path='/instrucoes' element={<Instrucoes />}/>
-        <Route path='/componentes' element={<Jogo />}/>
+        <Route path='/componentes' element={<Componentes />}/>
         <Route path='/jogo' element={<Jogo />}/>
         <Route path='/quemsomos' element={<QuemSomos />}/>
         <Route path='/profile' element={<Profile />}/>
