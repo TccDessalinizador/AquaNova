@@ -8,6 +8,8 @@
   --font-inter: "Inter", "sans-serif";
   --font-istok: "Istok Web", "sans-serif";
   --text-shadow-xl: 0 4px 4px rgba(0, 0, 0, 0.75);
+  --text-shadow-mb: 0 4px 4px rgba(0, 0, 0, 0.50);
+  --box-shadow-mb: 0 -4px 0 0 rgba(0, 0, 0, 0.25) inset;
   --background-fade: linear-gradient(to bottom, #1a1a1a, #1f1f1f, #2a2a2a, #333333);
 
 }

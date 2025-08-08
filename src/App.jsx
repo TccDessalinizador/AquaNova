@@ -9,20 +9,23 @@ import { Referencias } from './components/Referencias.jsx'
 import { Instrucoes } from './components/Instrucoes.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Componentes } from './components/Componentes.jsx'
+import { Home } from './components/Home.jsx'
 import { Link } from 'react-router-dom'
 
 export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Login />}/>
+        <Route path='/' element={<Home />}/>
 
         <Route path='/instrucoes' element={<Instrucoes />}/>
         <Route path='/componentes' element={<Componentes />}/>
         <Route path='/jogo' element={<Jogo />}/>
         <Route path='/quemsomos' element={<QuemSomos />}/>
         <Route path='/profile' element={<Profile />}/>
+        <Route path='/referencias' element={<Referencias />}/>
 
+        <Route path='/login' element={<Login />}/>
         <Route path='/cadastro' element={<Cadastro />}/>
 
 
