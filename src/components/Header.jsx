@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export function Header() {
 
     return (
-        <div class="w-[100%] h-[4rem] lg:h-[5rem] flex flex-row justify-between bg-[#0C0C0C] px-[0.4rem] pl-[0.5rem]">
+        <div class="w-[100%] h-[4rem] lg:h-[5rem] flex flex-row justify-between bg-[#0C0C0C] px-[0.4rem] pl-[0.5rem] fixed top-0">
 
             <div id="ancoras" class='lg:w-[23rem] lg:ml-[5rem] flex flex-row justify-between lg:gap-[1rem] lg:mr-[4.5rem] items-center font-inter'>
                 <Link to={"/instrucoes"} class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[0.3rem] lg:mx-[2rem] font-inter lg:mr-[3rem]">Instruções</Link>
