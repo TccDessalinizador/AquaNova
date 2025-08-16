@@ -7,15 +7,15 @@ export function Referencias() {
         <div>
             <Header />
 
-            <div id="pagina" class="flex flex-col bg-[#0C0C0C] text-white h-[94vh] lg:h-[90vh]">
-                <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center">Referências</h1>
+            <div id="pagina" class="bg-white lg:bg-gradient-to-t from-neutral-900 to-neutral-900/0 flex flex-col text-white h-[94vh] lg:h-[92vh] mt-[4rem]">
+                <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-shadow-xl">Referências</h1>
 
                 <div class="lg:flex lg:flex-row">
                     <div class="w-[100%] flex justify-center self-center lg:">
                         <img src={robo} alt="" class="w-[12rem] h-[12rem]"/>
                     </div>
 
-                    <ul class="h-[35rem] px-[2rem] justify-center flex flex-col">
+                    <ul class="h-[35rem] px-[2rem] justify-center flex flex-col text-[#0C0C0C]">
                         <li class="text-[1.5rem] font-inter"><a href="http://eventos.ecogestaobrasil.net/congestas2019/trabalhos/pdf/congestas2019-et-02-017.pdf" target='blank'>1- Proposta de um protótipo de dessalinização artesanal solar</a></li>
                         <br />
                         <li class="text-[1.5rem] font-inter"><a href="https://lume.ufrgs.br/handle/10183/127799" target='blank'>2- Dessalinização de água salobra e/ou salgada : métodos, custos e aplicações</a></li>

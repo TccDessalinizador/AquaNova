@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
-
-
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
   --font-display: "Istok Web", sans-serif;
   --font-inter: "Inter", "sans-serif";
@@ -19,8 +18,8 @@ select {
   /* Other styles */
 }
 
-#pagina-it {
-  /* background: linear-gradient(180deg, rgba(18, 18, 18, 0.00) 9.62%, #131313 62.5%); */
+/* #pagina-it {
+  background: linear-gradient(180deg, rgba(18, 18, 18, 0.00) 9.62%, #131313 62.5%);
   background: linear-gradient(to top, #1a1a1a, #1f1f1f, #2a2a2a, #333333);
 
-}
+} */
