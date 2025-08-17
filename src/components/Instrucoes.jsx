@@ -13,7 +13,7 @@ export function Instrucoes() {
         <div>
             <Header />
 
-            <div id="pagina-it" class="bg-gradient-to-b from-neutral-900/0 to-neutral-900 text-white px-[2.5rem] py-[2rem]">
+            <div id="pagina-it" class="bg-gradient-to-b from-neutral-900/0 to-neutral-900 text-white px-[2.5rem] py-[2rem] dark:bg-gradient-to-b from-#0C0C0C-900/0 to-neutral-900">
                 <h1 class="text-[2rem] text-[#0C0C0C] font-bold flex justify-center">Saiba como funciona</h1>
 
                 <div class="lg:flex lg:flex-row lg:gap-[5rem] lg:justify-between lg:text-[0.75rem]">

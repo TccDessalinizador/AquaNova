@@ -1,5 +1,4 @@
 import Logo from '../assets/logo tcc 3.png'
-import Foto from '../assets/FotodePerfil.jpg'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
@@ -7,7 +6,7 @@ import { Sun, Moon } from "lucide-react";
 export function Header() {
     const [darkMode, setDarkMode] = useState(() => {
         const saved = localStorage.getItem("theme");
-        return saved === "dark"; // se não existir, começa como Light
+        return saved === "dark"; // começa dark se salvo como dark
     });
 
     useEffect(() => {
@@ -16,36 +15,36 @@ export function Header() {
         if (darkMode) {
             root.classList.add("dark");
             localStorage.setItem("theme", "dark");
-            console.log("modo dark ativado")
+            console.log("modo dark ativado");
         } else {
             root.classList.remove("dark");
             localStorage.setItem("theme", "light");
-            console.log("modo light ativado")
+            console.log("modo light ativado");
         }
     }, [darkMode]);
 
-
     return (
-        <div class="w-[100%] h-[4rem] lg:h-[5rem] flex flex-row justify-between bg-[#0C0C0C] px-[0.4rem] pl-[0.5rem] fixed top-0">
+        <div className="w-full h-[4rem] lg:h-[5rem] flex flex-row justify-between bg-[#0C0C0C] px-[0.4rem] pl-[0.5rem] fixed top-0">
 
-            <div id="ancoras" class='lg:w-[23rem] lg:ml-[5rem] flex flex-row justify-between lg:gap-[1rem] lg:mr-[4.5rem] items-center font-inter'>
-                <Link to={"/instrucoes"} class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[0.3rem] lg:mx-[2rem] font-inter lg:mr-[3rem]">Instruções</Link>
-                <Link to={"/componentes"} class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[-3em] invisible lg:visible lg:ml[0] font-inter lg:mr-[1rem]">Componentes</Link>
-                <Link to={"/jogo"} class="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[-3rem] invisible lg:visible lg:ml-[0] font-inter lg:mr-[1rem]">Jogo</Link>
-                <Link to={"/quemsomos"} class="text-white my-[1rem] lg:w-[10rem] h-[2rem] font-light text-[0.75rem] flex items-center lg:visible font-inter">Quem somos</Link>
+            <div id="ancoras" className="lg:w-[23rem] lg:ml-[5rem] flex flex-row justify-between lg:gap-[1rem] lg:mr-[4.5rem] items-center font-inter">
+                <Link to={"/instrucoes"} className="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[0.3rem] lg:mx-[2rem] font-inter lg:mr-[3rem]">Instruções</Link>
+                <Link to={"/componentes"} className="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[-3em] invisible lg:visible lg:ml[0] font-inter lg:mr-[1rem]">Componentes</Link>
+                <Link to={"/jogo"} className="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[-3rem] invisible lg:visible lg:ml-[0] font-inter lg:mr-[1rem]">Jogo</Link>
+                <Link to={"/quemsomos"} className="text-white my-[1rem] lg:w-[10rem] h-[2rem] font-light text-[0.75rem] flex items-center lg:visible font-inter">Quem somos</Link>
             </div>
 
-            <Link to={'/'}><img src={Logo} alt="" class="h-[6rem] w-[7rem] lg:mt-[.5rem] flex justify-center" /></Link>
+            <Link to={'/'}>
+                <img src={Logo} alt="" className="h-[6rem] w-[7rem] lg:mt-[.5rem] flex justify-center" />
+            </Link>
 
-
-            <div id="right" class="flex flex-row lg:w-[30rem] justify-end lg:gap-[1rem] h-[3rem] my-auto mr-[6rem]">
+            <div id="right" className="flex flex-row lg:w-[30rem] justify-end lg:gap-[1rem] h-[3rem] my-auto mr-[6rem]">
                 <div
-                    className="flex items-center bg-[#111827] rounded-full p-1 cursor-pointer transition-colors duration-300"
+                    className="flex items-center bg-[#111827] rounded-full p-1 cursor-pointer transition-colors duration-800"
                     onClick={() => setDarkMode(!darkMode)}
                 >
                     {/* Light Option */}
                     <div
-                        className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 ${!darkMode ? "bg-[#1f2937] text-gray-200" : "text-gray-400"
+                        className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-800 ${!darkMode ? "bg-[#1f2937] text-gray-200" : "text-gray-400"
                             }`}
                     >
                         <Sun size={20} />
@@ -54,7 +53,7 @@ export function Header() {
 
                     {/* Dark Option */}
                     <div
-                        className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 ${darkMode ? "bg-[#1f2937] text-gray-200" : "text-gray-400"
+                        className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-800 ${darkMode ? "bg-[#1f2937] text-gray-200" : "text-gray-400"
                             }`}
                     >
                         <Moon size={20} />
@@ -62,7 +61,6 @@ export function Header() {
                     </div>
                 </div>
             </div>
-
 
         </div>
     )

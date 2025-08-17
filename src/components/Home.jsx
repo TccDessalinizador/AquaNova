@@ -14,7 +14,7 @@ export function Home() {
         <div>
             <Header />
 
-            <div id="pg1">
+            <div id="pg1" class="">
                 <h1 class="text-[2.25rem] text-[#0C0C0C] font-bold text-shadow-mb mt-[8rem] flex flex-col justify-center text-center mb-[.5rem]">Sol que dessalina <br /> <p class="text-[2rem] text-[#0C0C0C] font-bold text-shadow-mb">Futuro que se ilumina</p></h1>
                 <p class="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[2rem]">Tecnologia limpa e 100% autônoma que garante água potável às comunidades do nordeste.</p>
 

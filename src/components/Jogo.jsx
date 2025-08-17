@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 export function Jogo() {
     return (
-        <div class="bg-blue-500 bg-gradient-to-b from-slate-900 to-blue-900 h-[150vh]">
+        <div class="">
             <Header />
 
-            <div id="pagina" class="w-[100%]">
+            <div id="pagina" className="w-[100%] bg-gradient-to-b from-blue-600 to-slate-900 h-[145vh] dark:bg-dark-fade">
                 <h1 class="mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)]">Conheça nosso jogo</h1>
 
                 <div id="img" class="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
@@ -21,7 +21,7 @@ export function Jogo() {
                     <button class="w-[7.5rem] h-[3rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[0.75rem] text-[#0C0C0C] font-bold">Jogue agora</button>
                 </div>
 
-                <p>video</p>
+                <p className="mt-[1rem] flex mx-auto bg-grey-500 border border-red w-[27rem] h-[14rem] lg:w-[50rem] lg:h-[28rem] ">video</p>
             </div>
         </div>
     )
