@@ -1,6 +1,6 @@
 import JogoImagem from '../assets/jogo.jpg'
 import fotoJogo from '../assets/jogoFoto.png'
-import { Header } from './Header.jsx'
+import { Header } from '../components/Header.jsx'
 import { Link } from 'react-router-dom'
 
 export function Jogo() {

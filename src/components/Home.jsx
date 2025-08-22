@@ -109,7 +109,7 @@ export function Home() {
                     </div>
                 </div>
 
-                <div id="componentes" class="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[4rem]">
+                <div id="componentes" class="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[24rem]">
                     <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C]">
                         <h1 class="flex flex-row text-[1.5rem] lg:text-[2.5rem] font-inter font-bold gap-[.2rem]">Componentes e investimentos <img src={smile} alt="" /></h1>
                         <img src={sublinhado} alt="" class="flex self-end border border-red-500 bg-black" />
@@ -171,15 +171,15 @@ export function Home() {
                     </div>
                 </div>
 
-                <div id="referencias" class="bg-white dark:bg-[#131313] lg:bg-gradient-to-t from-neutral-900 to-neutral-900/0 flex flex-col text-white h-[94vh] mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[1rem]">
-                    <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-shadow-xl text-white mb-[8rem]">Referências</h1>
+                <div id="referencias" class="bg-gradient-to-t from-neutral-900 to-neutral-900/0 dark:bg-[#131313] flex flex-col text-white h-[94vh] mt-[-25rem] lg:mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[1rem]">
+                    <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-shadow-xl text-white mb-[5rem] lg:mb-[8rem]">Referências</h1>
 
                     <div class="lg:flex lg:flex-row">
-                        <div class="flex justify-center self-center lg:h-[15rem] lg:w-[80rem] lg:ml-[5rem] flex justify-center items-center text-[1.5rem]">
+                        <div class="flex justify-center self-center lg:h-[15rem] lg:w-[80rem] lg:ml-[5rem] flex justify-center items-center text-[1.5rem] px-[1rem]">
                             <p>Saiba quais foram as principais fontes que embasaram nossos estudos, pesquisas e desenvolvimento do projeto AquaNova. Acreditamos na ciência, na tecnologia acessível e em soluções sustentáveis — por isso, cada dado, componente e ideia utilizada tem base em materiais confiáveis e atualizados. Confira abaixo as referências que ajudaram a tornar este projeto possível.</p>
                         </div>
 
-                        <div class="w-[100%] flex justify-center self-center">
+                        <div class="w-[100%] flex justify-center self-center mt-[1rem]">
                             <img src={robo} alt="" class="w-[12rem] h-[12rem]" />
                         </div>
 

@@ -1,7 +1,7 @@
 import LogoSite from '../assets/LogoAquaNova.png'
 import FotodePerfil from '../assets/FotodePerfil.jpg'
 import Edit from '../assets/Edit.jpg'
-import { Header } from './Header.jsx'
+import { Header } from '../components/Header.jsx'
 import { Link } from 'react-router-dom'
 
 export function Profile() {

@@ -1,4 +1,4 @@
-import { Header } from './Header.jsx'
+import { Header } from '../components/Header.jsx'
 import fotoMenocci from '../assets/fotoMenocci.jpeg'
 import fotoBrandassi from '../assets/fotoBrandassi.jpeg'
 import modelo from '../assets/Ellipse 7.jpg'
