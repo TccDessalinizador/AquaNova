@@ -1,4 +1,5 @@
 import JogoImagem from '../assets/jogo.jpg'
+import fotoJogo from '../assets/jogoFoto.png'
 import { Header } from './Header.jsx'
 import { Link } from 'react-router-dom'
 
@@ -11,7 +12,7 @@ export function Jogo() {
                 <h1 class="mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)]">Conheça nosso jogo</h1>
 
                 <div id="img" class="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
-                    <img src={JogoImagem} alt="" class="flex w-[24.8rem] h-[14.5rem] self-center rounded-[4rem]"/>
+                    <img src={fotoJogo} alt="" class="flex w-[24.8rem] h-[14.5rem] self-center rounded-[3.5rem]"/>
                 </div>
 
                 <p class="px-[1.15rem] font-bold text-[1.25rem] text-white mb-[2rem] text-shadow-2xs">Em um futuro próximo, o mundo enfrenta uma crise hídrica sem precedentes. Em meio ao caos, o brilhante cientista Dr. Elias desenvolve uma máquina revolucionária capaz de dessalinizar água usando energia solar — uma invenção que pode salvar milhões de vidas. Porém, essa tecnologia atrai a atenção de grupos sombrios, dispostos a tudo para roubá-la e usá-la em benefício próprio. <br />

@@ -24,7 +24,7 @@ export function Header() {
     }, [darkMode]);
 
     return (
-        <div className="w-full h-[4rem] lg:h-[5rem] flex flex-row justify-between bg-[#0C0C0C] px-[0.4rem] pl-[0.5rem] fixed top-0">
+        <div className="w-full h-[4rem] lg:h-[5rem] flex flex-row justify-between bg-[#0C0C0C] px-[0.4rem] pl-[0.5rem] fixed z-10 top-0">
 
             <div id="ancoras" className="lg:w-[23rem] lg:ml-[5rem] flex flex-row justify-between lg:gap-[1rem] lg:mr-[4.5rem] items-center font-inter">
                 <Link to={"/instrucoes"} className="text-white my-[1rem] h-[2rem] font-light text-[0.75rem] flex items-center ml-[0.3rem] lg:mx-[2rem] font-inter lg:mr-[3rem]">Instruções</Link>
@@ -33,8 +33,8 @@ export function Header() {
                 <Link to={"/quemsomos"} className="text-white my-[1rem] lg:w-[10rem] h-[2rem] font-light text-[0.75rem] flex items-center lg:visible font-inter">Quem somos</Link>
             </div>
 
-            <Link to={'/'}>
-                <img src={Logo} alt="" className="h-[6rem] w-[7rem] lg:mt-[.5rem] flex justify-center" />
+            <Link to={'/'} className='ml-[50px]'>
+                <img src={Logo} alt="" className="cursor-pointer h-[6rem] w-[7rem] lg:mt-[.5rem] flex justify-center" />
             </Link>
 
             <div id="right" className="flex flex-row lg:w-[30rem] justify-end lg:gap-[1rem] h-[3rem] my-auto mr-[6rem]">

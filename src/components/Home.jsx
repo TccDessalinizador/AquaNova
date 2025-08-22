@@ -7,7 +7,13 @@ import like from '../assets/homeAssets/like.svg'
 import fotoMenocci from '../assets/fotoMenocci.jpeg'
 import fotoBrandassi from '../assets/fotoBrandassi.jpeg'
 import modelo from '../assets/Ellipse 7.jpg'
+import sublinhado from '../assets/sublinhado.svg'
+import smile from '../assets/smile.svg'
+import fotoJogo from '../assets/jogoFoto.png'
+import robo from '../assets/robo.png'
 import { Header } from './Header'
+import { Link } from 'react-router-dom'
+
 
 export function Home() {
     return (
@@ -77,31 +83,110 @@ export function Home() {
                 </div>
 
                 <div id="quemsomos">
-                        <h1 class="flex justify-center mb-[2rem] text-[1.5rem] text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
+                    <h1 class="flex justify-center mb-[2rem] text-[1.5rem] text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
 
-                        <div id="fotos" class="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
-                            <div class="flex flex-col items-center">
-                                <img src={fotoMenocci} alt="menocci" class="w-[12.5rem] lg:w-[15rem] h-[12rem] lg:h-[14rem] rounded-[100%] drop-shadow-xl/50" />
-                                <p class="text-[1.5rem] text-[#0C0C0C] font-semibold mb-[2.5rem] mt-[1.25rem] font-inter">Arthur Menocci</p>
-                            </div>
-
-                            <div class="flex flex-col items-center">
-                                <img src={modelo} alt="mariano" class="w-[12.5rem] lg:w-[15rem] h-[12rem] lg:h-[14rem] rounded-[100%]" />
-                                <p class="text-[1.5rem] text-[#0C0C0C] font-semibold mb-[2.5rem] mt-[1.25rem] font-inter">Eduardo Mariano</p>
-                            </div>
-
-                            <div class="flex flex-col items-center">
-                                <img src={modelo} alt="milbeyer" class="w-[12.5rem] lg:w-[15rem] h-[12rem] lg:h-[14rem] rounded-[100%]" />
-                                <p class="text-[1.5rem] text-[#0C0C0C] font-semibold mb-[2.5rem] mt-[1.25rem] font-inter">Guilherme Milbeyer</p>
-                            </div>
-
-                            <div class="flex flex-col items-center">
-                                <img src={fotoBrandassi} alt="brandassi" class="w-[12.5rem] lg:w-[15rem] h-[12rem] lg:h-[14rem] rounded-[100%] drop-shadow-xl/50" />
-                                <p class="text-[1.5rem] text-[#0C0C0C] font-semibold mb-[2.5rem] mt-[1.25rem] font-inter">Gustavo Brandassi</p>
-                            </div>
-
+                    <div id="fotos" class="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
+                        <div class="flex flex-col items-center">
+                            <img src={fotoMenocci} alt="menocci" class="w-[12.5rem] lg:w-[15rem] h-[12rem] lg:h-[14rem] rounded-[100%] drop-shadow-xl/50" />
+                            <p class="text-[1.5rem] text-[#0C0C0C] font-semibold mb-[2.5rem] mt-[1.25rem] font-inter">Arthur Menocci</p>
                         </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src={modelo} alt="mariano" class="w-[12.5rem] lg:w-[15rem] h-[12rem] lg:h-[14rem] rounded-[100%]" />
+                            <p class="text-[1.5rem] text-[#0C0C0C] font-semibold mb-[2.5rem] mt-[1.25rem] font-inter">Eduardo Mariano</p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src={modelo} alt="milbeyer" class="w-[12.5rem] lg:w-[15rem] h-[12rem] lg:h-[14rem] rounded-[100%]" />
+                            <p class="text-[1.5rem] text-[#0C0C0C] font-semibold mb-[2.5rem] mt-[1.25rem] font-inter">Guilherme Milbeyer</p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src={fotoBrandassi} alt="brandassi" class="w-[12.5rem] lg:w-[15rem] h-[12rem] lg:h-[14rem] rounded-[100%] drop-shadow-xl/50" />
+                            <p class="text-[1.5rem] text-[#0C0C0C] font-semibold mb-[2.5rem] mt-[1.25rem] font-inter">Gustavo Brandassi</p>
+                        </div>
+
+                    </div>
                 </div>
+
+                <div id="componentes" class="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[4rem]">
+                    <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C]">
+                        <h1 class="flex flex-row text-[1.5rem] lg:text-[2.5rem] font-inter font-bold gap-[.2rem]">Componentes e investimentos <img src={smile} alt="" /></h1>
+                        <img src={sublinhado} alt="" class="flex self-end border border-red-500 bg-black" />
+                    </div>
+
+                    <div class="flex flex-col items-center mb-[3rem] text-[#0C0C0C]">
+                        <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold">Saiba onde comprar </h2>
+                        <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold">e quanto será seu investimento</h2>
+                    </div>
+
+                    <div id='video' class="w-[24rem] h-[18rem] lg:w-[50rem] lg:h-[30rem] bg-[#C4C4C4] text-black flex items-center justify-center mb-[2rem] lg:mb-[4rem]"><p>video</p></div>
+
+                    <h2 class="text-[1.5rem] text-[#0C0C0C] font-inter font-bold flex justify-center mb-[1.75rem]">Lista de Itens</h2>
+
+                    <div id="lista" class="text-[#0C0C0C] flex flex-col lg:flex-row lg:gap-[50rem] w-[100%] mb-[2rem] lg:mb-[4rem]">
+
+                        <div id="left" class="text-[1.25rem] lg:text-[1.5rem] font-bold font-inter">
+                            <p>
+                                Sensor de Condutividade/TDS <br />
+                                Sensor de Nível Ultrassônico <br />
+                                Sensor de Pressão de Água  <br />
+                                Sensor de Fluxo de Água <br />
+                                Válvulas Solenoides 12V <br />
+                                Relés de Estado Sólido <br />
+                                Módulo Bluetooth <br />
+                                MOSFET IRF520 <br />
+                                Display LCD <br />
+                            </p>
+                        </div>
+
+                        <div id="right" class="text-[1.25rem] lg:text-[1.5rem] font-bold font-inter lg:text-right">
+                            <p>
+                                4 LDRs <br />
+                                Ponte H  <br />
+                                Bateria de Lítio  <br />
+                                Mini Painel Solar  <br />
+                                Módulo Step-down  <br />
+                                Controlador de Carga  <br />
+                                2 Servomotores MG995  <br />
+                                Carcaça para Membrana de 50 GPD  <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="jogo" className="w-[100%] h-[100vh] dark:bg-dark-fade">
+                    <h1 class="mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)]">Conheça nosso jogo</h1>
+
+                    <div id="img" class="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
+                        <img src={fotoJogo} alt="" class="flex w-[25rem] lg:w-[45.8rem] lg:h-[25.5rem] self-center rounded-[3.5rem]" />
+                    </div>
+
+                    <p class="w-[45.8rem] mx-auto px-[1.15rem] font-normal text-[1.25rem] text-[#0C0C0C] mb-[1.5rem] text-shadow-2xs">O cientista Dr. Elias criou um dessalinizador movido a energia solar, capaz de mudar o mundo. Mas sua invenção passou a ser alvo de grupos que querem usá-la para fins próprios. Agora, ele e seus ajudantes precisam proteger essa tecnologia a todo custo. Enfrente desafios, proteja o projeto e ajude a salvar o futuro da água no planeta.
+
+                        <br />Será você capaz de proteger o futuro da humanidade?</p>
+
+                    <div class="flex items-center justify-center self-center w-[100%]">
+                        <Link to={'/jogo'} class="w-[8rem] h-[2rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[0.75rem] text-[#0C0C0C] font-bold flex items-center justify-center cursor-pointer">Saiba mais</Link>
+                    </div>
+                </div>
+
+                <div id="referencias" class="bg-white dark:bg-[#131313] lg:bg-gradient-to-t from-neutral-900 to-neutral-900/0 flex flex-col text-white h-[94vh] mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto">
+                    <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-shadow-xl text-white">Referências</h1>
+
+                    <div class="lg:flex lg:flex-row">
+                        <div class="flex justify-center self-center border border-red-500 lg">
+                            <p>Saiba quais foram as principais fontes que embasaram nossos estudos, pesquisas e desenvolvimento do projeto AquaNova. Acreditamos na ciência, na tecnologia acessível e em soluções sustentáveis — por isso, cada dado, componente e ideia utilizada tem base em materiais confiáveis e atualizados. Confira abaixo as referências que ajudaram a tornar este projeto possível.</p>
+                        </div>
+
+                        <div class="w-[100%] flex justify-center self-center lg:">
+                            <img src={robo} alt="" class="w-[12rem] h-[12rem]" />
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
     )

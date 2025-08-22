@@ -59,6 +59,7 @@ export function Componentes() {
                 </div>
 
                 <h2 class="text-[1.5rem] font-inter font-bold flex justify-center mb-[1rem] text-[#0C0C0C]">Comprar</h2>
+                <h2 class="text-[1.5rem] font-inter font-bold flex justify-center mb-[1rem] text-[#0C0C0C]">Comprar</h2>
                 <div id="comprar" class="flex flex-row lg:grid lg:grid-cols-3 lg:gap-[1rem]">
 
                     <div id="produto1" class="border-[4px] border-[#0C0C0C]  h-[40rem] bg-white mb-[1rem] items-center">
