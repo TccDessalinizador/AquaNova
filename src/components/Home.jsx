@@ -171,15 +171,15 @@ export function Home() {
                     </div>
                 </div>
 
-                <div id="referencias" class="bg-white dark:bg-[#131313] lg:bg-gradient-to-t from-neutral-900 to-neutral-900/0 flex flex-col text-white h-[94vh] mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto">
-                    <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-shadow-xl text-white">Referências</h1>
+                <div id="referencias" class="bg-white dark:bg-[#131313] lg:bg-gradient-to-t from-neutral-900 to-neutral-900/0 flex flex-col text-white h-[94vh] mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[1rem]">
+                    <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-shadow-xl text-white mb-[8rem]">Referências</h1>
 
                     <div class="lg:flex lg:flex-row">
-                        <div class="flex justify-center self-center border border-red-500 lg">
+                        <div class="flex justify-center self-center lg:h-[15rem] lg:w-[80rem] lg:ml-[5rem] flex justify-center items-center text-[1.5rem]">
                             <p>Saiba quais foram as principais fontes que embasaram nossos estudos, pesquisas e desenvolvimento do projeto AquaNova. Acreditamos na ciência, na tecnologia acessível e em soluções sustentáveis — por isso, cada dado, componente e ideia utilizada tem base em materiais confiáveis e atualizados. Confira abaixo as referências que ajudaram a tornar este projeto possível.</p>
                         </div>
 
-                        <div class="w-[100%] flex justify-center self-center lg:">
+                        <div class="w-[100%] flex justify-center self-center">
                             <img src={robo} alt="" class="w-[12rem] h-[12rem]" />
                         </div>
 
