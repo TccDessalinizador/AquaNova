@@ -11,48 +11,55 @@ import sublinhado from '../assets/sublinhado.svg'
 import smile from '../assets/smile.svg'
 import fotoJogo from '../assets/jogoFoto.png'
 import robo from '../assets/robo.png'
+import circuloDark from '../assets/homeAssets/circuloDark.png'
+import interrogacaoDark from '../assets/homeAssets/interrogacaoDark.png'
+import smileDark from '../assets/homeAssets/smileDark.png'
 import { Header } from './Header'
 import { Link } from 'react-router-dom'
+import { useContext, useState } from 'react'
+import { ThemeContext } from '../context/ThemeContext'
 
 
 export function Home() {
+    const { theme } = useContext(ThemeContext)
+
     return (
         <div>
             <Header />
 
-            <div id="pg1" class="">
-                <h1 class="text-[2.25rem] text-[#0C0C0C] font-bold text-shadow-mb mt-[8rem] flex flex-col justify-center text-center mb-[.5rem] lg:text-[4.5rem]">Sol que dessalina <br /> <p class="text-[2rem] text-[#0C0C0C] font-bold text-shadow-mb lg:text-[4.5rem]">Futuro que se ilumina</p></h1>
+            <div id="pg1" class="dark:bg-[#0C0C0C] lg:pt-[8rem]">
+                <h1 class="text-[2.25rem] text-[#0C0C0C] font-bold text-shadow-mb mt-[rem] flex flex-col justify-center text-center mb-[.5rem] lg:text-[4.5rem] dark:text-white dark:text-shadow-none">Sol que dessalina <br /> <p class=" dark:text-white dark:text-shadow-none text-[2rem] text-[#0C0C0C] font-bold text-shadow-mb lg:text-[4.5rem]">Futuro que se ilumina</p></h1>
                 <p class="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[2rem] lg:w-[60rem] lg:justify-center">Tecnologia limpa e 100% autônoma que garante água potável às comunidades do nordeste.</p>
 
-                <div id="separacao" class="flex mx-auto w-[24.5rem] h-[0.18rem] bg-[#000000] mb-[7rem]"></div>
+                <div id="separacao" class="flex mx-auto w-[24.5rem] h-[0.18rem] bg-[#000000] mb-[7rem] dark:bg-white"></div>
 
-                <p class="text-[2rem] text-[#0C0C0C] font bold flex justify-center mb-[.5rem] lg:text-[3rem]">Saiba como funciona</p>
+                <p class="text-[2rem] text-[#0C0C0C] font bold flex justify-center mb-[.5rem] lg:text-[3rem] dark:text-white">Saiba como funciona</p>
                 <p class="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[5.5rem] lg:w-[60rem] lg:justify-center">Veja como o AquaNova purifica água salobra com energia solar — e como aplicar isso no semiárido.</p>
 
                 <div id="grid" class="mb-[10rem] lg:flex">
 
                     <div id="hiw" class="w-[100%] flex flex-col items-center px-[2rem] mb-[5rem]">
-                        <img src={interrogacao} alt="" class="mb-[.8rem] " />
-                        <h2 class="text-neutral-950/75 font-bold text-[1.5rem] mb-[.5rem]">Entenda o Processo</h2>
-                        <p class="text-[0.9rem] font-inter text-[#0C0C0C] flex text-center">Conheça cada etapa do ciclo de dessalinização: captação, evaporação, condensação e entrega da água limpa.</p>
+                        {theme === "dark" ? <img src={interrogacaoDark} alt="" class="mb-[.8rem]" /> : <img src={interrogacao} alt="" class="mb-[.8rem]" />}
+                        <h2 class="text-neutral-950/75 font-bold text-[1.5rem] mb-[.5rem] dark:text-white">Entenda o Processo</h2>
+                        <p class="text-[0.9rem] font-inter text-[#0C0C0C] flex text-center dark:text-[#A3A3A3]">Conheça cada etapa do ciclo de dessalinização: captação, evaporação, condensação e entrega da água limpa.</p>
                     </div>
 
                     <div id="SPL" class="w-[100%] flex flex-col items-center px-[2rem] mb-[5rem]">
-                        <img src={emoji} alt="" class="mb-[.8rem] " />
-                        <h2 class="text-neutral-950/75 font-bold text-[1.5rem] mb-[.5rem]">Supere Desafios Locais</h2>
-                        <p class="text-[0.9rem] font-inter text-[#0C0C0C] flex text-center">Saiba como contornar a salinidade elevada e a falta de infraestrutura com um sistema autônomo e de fácil manutenção.</p>
+                        {theme === "dark" ? <img src={smileDark} alt="" class="mb-[.8rem]" /> : <img src={emoji1} alt="" class="mb-[.8rem]" />}
+                        <h2 class="text-neutral-950/75 font-bold text-[1.5rem] mb-[.5rem] dark:text-white">Supere Desafios Locais</h2>
+                        <p class="text-[0.9rem] font-inter text-[#0C0C0C] flex text-center dark:text-[#A3A3A3]">Saiba como contornar a salinidade elevada e a falta de infraestrutura com um sistema autônomo e de fácil manutenção.</p>
                     </div>
 
                     <div id="GFC" class="w-[100%] flex flex-col items-center px-[2rem]">
                         <img src={ciclo} alt="" class="mb-[.8rem] " />
-                        <h2 class="text-neutral-950/75 font-bold text-[1.5rem] mb-[.5rem] flex flex-col text-center lg:w-[24rem] lg:flex-row lg:gap-[.1rem]">Garanta Funcionamento <div /> Continuo</h2>
-                        <p class="text-[0.9rem] font-inter text-[#0C0C0C] flex text-center">Aprenda a manter seu equipamento em operação 24/7, com monitoramento via Arduino e recarga solar inteligente.</p>
+                        <h2 class="text-neutral-950/75 font-bold text-[1.5rem] mb-[.5rem] flex flex-col text-center lg:w-[24rem] lg:flex-row lg:gap-[.1rem] dark:text-white">Garanta Funcionamento <div /> Continuo</h2>
+                        <p class="text-[0.9rem] font-inter text-[#0C0C0C] flex text-center dark:text-[#A3A3A3]">Aprenda a manter seu equipamento em operação 24/7, com monitoramento via Arduino e recarga solar inteligente.</p>
                     </div>
 
                 </div>
 
-                <div id="beneficios" class="bg-[linear-gradient(180deg,rgba(18,18,18,0)_0%,#121212_71.63%)] h-[71rem] mb-[6rem]">
-                    <h2 class="text-[2rem] text-neutral-950/75 font bold flex flex-col justify-center items-center text-start mb-[3rem] lg:flex-row lg:text-[3rem] lg:gap-[.2rem]">Os benefícios de <div /> dominar o AquaNova</h2>
+                <div id="beneficios" class="bg-[linear-gradient(180deg,rgba(18,18,18,0)_0%,#121212_71.63%)] h-[71rem] mb-[6rem] lg:h-[40rem]">
+                    <h2 class="text-[2rem] dark:text-white text-neutral-950/75 font bold flex flex-col justify-center items-center text-start mb-[3rem] lg:flex-row lg:text-[3rem] lg:gap-[.2rem]">Os benefícios de <div /> dominar o AquaNova</h2>
 
                     <p class="text-[1.2rem] font-light text-shadow-mb text-white w-[15rem] mx-auto mb-[3.5rem] lg:w-[100%] lg:text-[1.5rem] flex lg:items-center lg:justify-center">Ao aplicar nosso método completo, você vai conquistar:</p>
 

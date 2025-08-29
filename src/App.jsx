@@ -11,26 +11,29 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Componentes } from './pages/Componentes.jsx'
 import { Home } from './components/Home.jsx'
 import { Link } from 'react-router-dom'
+import { ThemeProvider } from './context/ThemeContext.jsx'
 
 export function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />}/>
+      <ThemeProvider>
+        <Routes>
+          <Route path='/' element={<Home />}/>
 
-        <Route path='/instrucoes' element={<Instrucoes />}/>
-        <Route path='/componentes' element={<Componentes />}/>
-        <Route path='/jogo' element={<Jogo />}/>
-        <Route path='/quemsomos' element={<QuemSomos />}/>
-        <Route path='/profile' element={<Profile />}/>
-        <Route path='/referencias' element={<Referencias />}/>
+          <Route path='/instrucoes' element={<Instrucoes />}/>
+          <Route path='/componentes' element={<Componentes />}/>
+          <Route path='/jogo' element={<Jogo />}/>
+          <Route path='/quemsomos' element={<QuemSomos />}/>
+          <Route path='/profile' element={<Profile />}/>
+          <Route path='/referencias' element={<Referencias />}/>
 
-        <Route path='/login' element={<Login />}/>
-        <Route path='/cadastro' element={<Cadastro />}/>
+          <Route path='/login' element={<Login />}/>
+          <Route path='/cadastro' element={<Cadastro />}/>
 
 
 
-      </Routes>
+        </Routes>
+      </ThemeProvider>
     </BrowserRouter>
   )
 }
