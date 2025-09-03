@@ -37,6 +37,7 @@ export function Home() {
                 <p class="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[5.5rem] lg:w-[60rem] lg:justify-center">Veja como o AquaNova purifica água salobra com energia solar — e como aplicar isso no semiárido.</p>
 
                 <div id="grid" class="mb-[10rem] lg:flex">
+                <div id="grid" class="mb-[10rem] lg:flex">
 
                     <div id="hiw" class="w-[100%] flex flex-col items-center px-[2rem] mb-[5rem]">
                         {theme === "dark" ? <img src={interrogacaoDark} alt="" class="mb-[.8rem]" /> : <img src={interrogacao} alt="" class="mb-[.8rem]" />}
@@ -60,10 +61,14 @@ export function Home() {
 
                 <div id="beneficios" class="bg-[linear-gradient(180deg,rgba(18,18,18,0)_0%,#121212_71.63%)] h-[71rem] mb-[6rem] lg:h-[40rem]">
                     <h2 class="text-[2rem] dark:text-white text-neutral-950/75 font bold flex flex-col justify-center items-center text-start mb-[3rem] lg:flex-row lg:text-[3rem] lg:gap-[.2rem]">Os benefícios de <div /> dominar o AquaNova</h2>
+                <div id="beneficios" class="bg-[linear-gradient(180deg,rgba(18,18,18,0)_0%,#121212_71.63%)] h-[71rem] mb-[6rem]">
+                    <h2 class="text-[2rem] text-neutral-950/75 font bold flex justify-center text-start mb-[3rem] text-[0C0C0C] text-[3rem] font-inter">Os benefícios de <br /> dominar o AquaNova</h2>
 
                     <p class="text-[1.2rem] font-light text-shadow-mb text-white w-[15rem] mx-auto mb-[3.5rem] lg:w-[100%] lg:text-[1.5rem] flex lg:items-center lg:justify-center">Ao aplicar nosso método completo, você vai conquistar:</p>
+                    <p class="text-[1.2rem] font-light text-shadow-mb text-white w-[15rem] mx-auto mb-[3.5rem] lg:w-[30rem]">Ao aplicar nosso método completo, você vai conquistar:</p>
 
                     <div id="grid-beneficios" class="lg:flex lg:gap-[5rem] lg:px-[12rem]">
+                    <div id="grid-beneficios" class="lg:flex lg:flex-row lg:justify-center lg:self-center lg:gap-[5rem]">
 
                         <div id='fdu' class="flex flex-col items-center mb-[3rem]">
                             <img src={like} alt="" />
@@ -85,6 +90,7 @@ export function Home() {
 
 
                     </div>
+                    <button class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer">Saiba mais</button>
                     <button class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center self-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer">Saiba mais</button>
 
                 </div>
@@ -116,6 +122,7 @@ export function Home() {
                     </div>
                 </div>
 
+                <div id="componentes" class="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[30rem] lg:mt-[5rem]">
                 <div id="componentes" class="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[4rem]">
                     <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C]">
                         <h1 class="flex flex-row text-[1.5rem] lg:text-[2.5rem] font-inter font-bold gap-[.2rem]">Componentes e investimentos <img src={smile} alt="" /></h1>
@@ -178,7 +185,7 @@ export function Home() {
                     </div>
                 </div>
 
-                <div id="referencias" class="bg-gradient-to-t from-neutral-900 to-neutral-900/0 dark:bg-[#131313] flex flex-col text-white h-[94vh] mt-[-25rem] lg:mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[1rem]">
+                <div id="referencias" class="bg-gradient-to-t from-neutral-900 to-neutral-900/0 dark:bg-[#131313] flex flex-col text-white h-[94vh] mt-[-18rem] lg:mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[1rem]">
                     <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-shadow-xl text-white mb-[5rem] lg:mb-[8rem]">Referências</h1>
 
                     <div class="lg:flex lg:flex-row">
