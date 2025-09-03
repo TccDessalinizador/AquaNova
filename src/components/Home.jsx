@@ -18,6 +18,7 @@ import { Header } from './Header'
 import { Link } from 'react-router-dom'
 import { useContext, useState } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
+import { CardHome } from './CardHome'
 
 
 export function Home() {
@@ -38,35 +39,32 @@ export function Home() {
 
                 <div id="grid" class="mb-[10rem] lg:flex">
 
-                    <div id="hiw" class="w-[100%] flex flex-col items-center px-[2rem] mb-[5rem]">
-                        {theme === "dark" ? <img src={interrogacaoDark} alt="" class="mb-[.8rem]" /> : <img src={interrogacao} alt="" class="mb-[.8rem]" />}
-                        <h2 class="text-neutral-950/75 font-bold text-[1.5rem] mb-[.5rem] dark:text-white">Entenda o Processo</h2>
-                        <p class="text-[0.9rem] font-inter text-[#0C0C0C] flex text-center dark:text-[#A3A3A3]">Conheça cada etapa do ciclo de dessalinização: captação, evaporação, condensação e entrega da água limpa.</p>
-                    </div>
+                    <CardHome
+                        img={theme === "dark" ? interrogacaoDark : interrogacao}
+                        title={"Entenda o Processo"}
+                        text={"Conheça cada etapa do ciclo de dessalinização: captação, evaporação, condensação e entrega da água limpa."}
+                    />
 
-                    <div id="SPL" class="w-[100%] flex flex-col items-center px-[2rem] mb-[5rem]">
-                        {theme === "dark" ? <img src={smileDark} alt="" class="mb-[.8rem]" /> : <img src={emoji1} alt="" class="mb-[.8rem]" />}
-                        <h2 class="text-neutral-950/75 font-bold text-[1.5rem] mb-[.5rem] dark:text-white">Supere Desafios Locais</h2>
-                        <p class="text-[0.9rem] font-inter text-[#0C0C0C] flex text-center dark:text-[#A3A3A3]">Saiba como contornar a salinidade elevada e a falta de infraestrutura com um sistema autônomo e de fácil manutenção.</p>
-                    </div>
+                    <CardHome
+                        img={theme === "dark" ? smileDark : emoji}
+                        title={"Supere Desafios Locais"}
+                        text={"Saiba como contornar a salinidade elevada e a falta de infraestrutura com um sistema autônomo e de fácil manutenção."}
+                    />
 
-                    <div id="GFC" class="w-[100%] flex flex-col items-center px-[2rem]">
-                        <img src={ciclo} alt="" class="mb-[.8rem] " />
-                        <h2 class="text-neutral-950/75 font-bold text-[1.5rem] mb-[.5rem] flex flex-col text-center lg:w-[24rem] lg:flex-row lg:gap-[.1rem] dark:text-white">Garanta Funcionamento <div /> Continuo</h2>
-                        <p class="text-[0.9rem] font-inter text-[#0C0C0C] flex text-center dark:text-[#A3A3A3]">Aprenda a manter seu equipamento em operação 24/7, com monitoramento via Arduino e recarga solar inteligente.</p>
-                    </div>
-
+                    <CardHome
+                        img={theme === "dark" ? circuloDark : ciclo}
+                        title={"Garanta Funcionamento Continuo"}
+                        text={"Aprenda a manter seu equipamento em operação 24/7, com monitoramento via Arduino e recarga solar inteligente."}
+                    />
                 </div>
 
                 <div id="beneficios" class="bg-[linear-gradient(180deg,rgba(18,18,18,0)_0%,#121212_71.63%)] h-[71rem] mb-[6rem] lg:h-[40rem]">
-                    <h2 class="text-[2rem] dark:text-white text-neutral-950/75 font bold flex flex-col justify-center items-center text-start mb-[3rem] lg:flex-row lg:text-[3rem] lg:gap-[.2rem]">Os benefícios de <div /> dominar o AquaNova</h2>
                     <div id="beneficios" class="bg-[linear-gradient(180deg,rgba(18,18,18,0)_0%,#121212_71.63%)] h-[71rem] mb-[6rem]">
-                        <h2 class="text-[2rem] text-neutral-950/75 font bold flex justify-center text-start mb-[3rem] text-[0C0C0C] text-[3rem] font-inter">Os benefícios de <br /> dominar o AquaNova</h2>
+                        <h2 class="text-[2rem] dark:text-white text-neutral-950/75 font bold flex flex-col justify-center items-center text-start mb-[3rem] lg:flex-row lg:text-[3rem] lg:gap-[.2rem]">Os benefícios de <div /> dominar o AquaNova</h2>
 
-                        <p class="text-[1.2rem] font-light text-shadow-mb text-white w-[15rem] mx-auto mb-[3.5rem] lg:w-[100%] lg:text-[1.5rem] flex lg:items-center lg:justify-center">Ao aplicar nosso método completo, você vai conquistar:</p>
-                        <p class="text-[1.2rem] font-light text-shadow-mb text-white w-[15rem] mx-auto mb-[3.5rem] lg:w-[30rem]">Ao aplicar nosso método completo, você vai conquistar:</p>
+                        <p class="text-[1.2rem] font-light text-shadow-mb text-white w-[15rem] mx-auto mb-[3.5rem] lg:w-[100%] lg:text-[1.5rem] flex lg:items-center lg:justify-center dark:text-white">Ao aplicar nosso método completo, você vai conquistar:</p>
 
-                        <div id="grid-beneficios" class="lg:flex lg:gap-[5rem] lg:px-[12rem]">
+                        <div id="grid-beneficios" class="lg:flex lg:flex-col lg:gap-[5rem] lg:px-[12rem]">
                             <div id="grid-beneficios" class="lg:flex lg:flex-row lg:justify-center lg:self-center lg:gap-[5rem]">
 
                                 <div id='fdu' class="flex flex-col items-center mb-[3rem]">
@@ -89,13 +87,12 @@ export function Home() {
 
 
                             </div>
-                            <button class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer">Saiba mais</button>
-                            <button class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center self-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer">Saiba mais</button>
+                            <button class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem]">Saiba mais</button>
 
                         </div>
 
-                        <div id="quemsomos">
-                            <h1 class="flex justify-center mb-[2rem] text-[1.5rem] text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
+                        <div id="quemsomos" class="lg:w-[100vw] border border-red">
+                            <h1 class="flex justify-center mb-[2rem] lg:mt-[8rem] text-[1.5rem] text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
 
                             <div id="fotos" class="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
                                 <div class="flex flex-col items-center">
