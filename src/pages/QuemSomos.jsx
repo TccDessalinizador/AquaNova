@@ -10,8 +10,8 @@ export function QuemSomos() {
         <div>
             <Header />
 
-            <div id="pagina" className="h-[100vh] bg-white dark:bg-[#3C3B3B]">
-                <h1 class="flex justify-center pt-[8rem] mb-[2rem] text-[1.5rem] dark:text-white font-bold text-shadow-lg/30">Quem somos?</h1>
+            <div id="pagina" className="h-[150vh] lg:h-[103vh] bg-white dark:bg-[#0C0C0C]">
+                <h1 class="flex justify-center pt-[8rem] mb-[2rem] text-[2rem] dark:text-white font-bold text-shadow-lg/30">Quem somos?</h1>
 
                 <div id="fotos" class="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
                     <QuemSomosComp

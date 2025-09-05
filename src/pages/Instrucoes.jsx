@@ -13,7 +13,7 @@ export function Instrucoes() {
         <div>
             <Header />
 
-            <div id="pagina-it" class="bg-gradient-to-b from-neutral-900/0 to-neutral-900 text-white px-[2.5rem] py-[2rem] dark:bg-gradient-to-b from-#0C0C0C-900/0 to-neutral-900">
+            <div id="pagina-it" class="bg-white dark:bg-[#0C0C0C] text-white px-[2.5rem] py-[2rem] dark:bg-gradient-to-b from-#0C0C0C-900/0 to-neutral-900">
                 <h1 class="text-[2rem] text-[#0C0C0C] font-bold flex justify-center">Saiba como funciona</h1>
 
                 <div class="lg:flex lg:flex-row lg:gap-[5rem] lg:justify-between lg:text-[0.75rem]">
@@ -22,8 +22,8 @@ export function Instrucoes() {
                             <img src={um} alt="" class="" />
                             <img src={instrucao1} alt="" class="mt-[-1.8rem]" />
                         </div>
-                        <h2 class="text-[1.5rem] text-shadow-xl font-bold font-inter flex justify-center mb-[.5rem] mt-[-3.5rem]">Preparos para ligar</h2>
-                        <p class="text-[1.25rem] font-inter text-shadow-xl">
+                        <h2 class="text-[1.5rem] font-bold font-inter flex justify-center mb-[.5rem] mt-[-3.5rem] text-black dark:text-white">Preparos para ligar</h2>
+                        <p class="text-[1.25rem] font-inter text-black dark:text-white">
                             1-Instale o AquaNova em uma área externa com boa incidência solar.
                             <br />
                             <br />
@@ -49,8 +49,8 @@ export function Instrucoes() {
                             <img src={dois} alt="" class="" />
                             <img src={instrucao2} alt="" class="mt-[-2rem]" />
                         </div>
-                        <h2 class="text-[1.5rem] text-shadow-xl font-bold font-inter flex justify-center mb-[1rem] mt-[-5rem]">Verifique as conexões</h2>
-                        <p class="text-[1.25rem] font-inter text-shadow-xl mt-[-1rem]">
+                        <h2 class="text-[1.5rem] text-black dark:text-white font-bold font-inter flex justify-center mb-[1.5rem] mt-[-3rem]">Verifique as conexões</h2>
+                        <p class="text-[1.25rem] text-black dark:text-white font-inter mt-[-1rem]">
                             1-A água salobra é direcionada para o recipiente de aquecimento.
                             <br />
                             <br />
@@ -69,8 +69,8 @@ export function Instrucoes() {
                             <img src={tres} alt="" class="" />
                             <img src={instrucao3} alt="" class="mt-[-1.8rem]" />
                         </div>
-                        <h2 class="text-[1.5rem] text-shadow-xl font-bold font-inter flex justify-center mb-[.5rem] mt-[-2rem]">Monitoramento</h2>
-                        <p class="text-[1.25rem] font-inter text-shadow-xl">
+                        <h2 class="text-[1.5rem] text-black dark:text-white font-bold font-inter flex justify-center mb-[.5rem]">Monitoramento</h2>
+                        <p class="text-[1.25rem] font-inter text-black dark:text-white">
                             1- Todos os dados são enviados em tempo real via Bluetooth.
                             Você pode visualizar:
                             <ul>

@@ -7,10 +7,6 @@ import like from '../assets/homeAssets/like.svg'
 import fotoMenocci from '../assets/fotoMenocci.jpeg'
 import fotoBrandassi from '../assets/fotoBrandassi.jpeg'
 import modelo from '../assets/Ellipse 7.jpg'
-import sublinhado from '../assets/sublinhado.svg'
-import sublinhadoDark from "../assets/homeAssets/sublinhadoDark.png"
-import smile from '../assets/smile.svg'
-import emojiSmileDark from "../assets/emojiSmileDark.png"
 import fotoJogo from '../assets/jogoFoto.png'
 import robo from '../assets/robo.png'
 import circuloDark from '../assets/homeAssets/circuloDark.png'
@@ -26,6 +22,7 @@ import { ThemeContext } from '../context/ThemeContext'
 import { CardHome } from './CardHomeF'
 import { CardHomeS } from './CardHomeS'
 import { QuemSomosComp } from './QuemSomosComp'
+import { CompComponentes } from './CompComponentes'
 
 
 export function Home() {
@@ -35,16 +32,16 @@ export function Home() {
         <div>
             <Header />
 
-            <div id="pg1" class="dark:bg-[#0C0C0C] lg:pt-[8rem]">
-                <h1 class="text-[2.25rem] text-[#0C0C0C] font-bold text-shadow-mb mt-[rem] flex flex-col justify-center text-center mb-[.5rem] lg:text-[4.5rem] dark:text-white dark:text-shadow-none">Sol que dessalina <br /> <p class=" dark:text-white dark:text-shadow-none text-[2rem] text-[#0C0C0C] font-bold text-shadow-mb lg:text-[4.5rem]">Futuro que se ilumina</p></h1>
-                <p class="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[2rem] lg:w-[60rem] lg:justify-center">Tecnologia limpa e 100% autônoma que garante água potável às comunidades do nordeste.</p>
+            <div id="pg1" className="dark:bg-[#0C0C0C] lg:pt-[8rem]">
+                <h1 className="text-[2.25rem] text-[#0C0C0C] font-bold text-shadow-mb mt-[rem] flex flex-col justify-center text-center mb-[.5rem] lg:text-[4.5rem] dark:text-white dark:text-shadow-none">Sol que dessalina <br /> <p className=" dark:text-white dark:text-shadow-none text-[2rem] text-[#0C0C0C] font-bold text-shadow-mb lg:text-[4.5rem]">Futuro que se ilumina</p></h1>
+                <p className="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[2rem] lg:w-[60rem] lg:justify-center">Tecnologia limpa e 100% autônoma que garante água potável às comunidades do nordeste.</p>
 
-                <div id="separacao" class="flex mx-auto w-[24.5rem] h-[0.18rem] bg-[#000000] mb-[7rem] dark:bg-white"></div>
+                <div id="separacao" className="flex mx-auto w-[24.5rem] h-[0.18rem] bg-[#000000] mb-[7rem] dark:bg-white"></div>
 
-                <p class="text-[2rem] text-[#0C0C0C] font bold flex justify-center mb-[.5rem] lg:text-[3rem] dark:text-white">Saiba como funciona</p>
-                <p class="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[5.5rem] lg:w-[60rem] lg:justify-center">Veja como o AquaNova purifica água salobra com energia solar — e como aplicar isso no semiárido.</p>
+                <p className="text-[2rem] text-[#0C0C0C] font bold flex justify-center mb-[.5rem] lg:text-[3rem] dark:text-white">Saiba como funciona</p>
+                <p className="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[5.5rem] lg:w-[60rem] lg:justify-center">Veja como o AquaNova purifica água salobra com energia solar — e como aplicar isso no semiárido.</p>
 
-                <div id="grid" class="mb-[10rem] lg:flex">
+                <div id="grid" className="mb-[10rem] lg:flex">
 
                     <CardHome
                         img={theme === "dark" ? interrogacaoDark : interrogacao}
@@ -66,13 +63,13 @@ export function Home() {
                 </div>
 
 
-                <div id="beneficios" class="dark:bg-[#0C0C0C] h-[71rem] mb-[0rem]">
-                    <h2 class="text-[2rem] dark:text-white text-neutral-950/75 font bold flex flex-col justify-center items-center text-start mb-[3rem] lg:flex-row lg:text-[3rem] lg:gap-[.2rem]">Os benefícios de <div /> dominar o AquaNova</h2>
+                <div id="beneficios" className="dark:bg-[#0C0C0C] h-[71rem] mb-[0rem]">
+                    <h2 className="text-[2rem] dark:text-white text-neutral-950/75 font bold flex flex-col justify-center items-center text-start mb-[3rem] lg:flex-row lg:text-[3rem] lg:gap-[.2rem]">Os benefícios de <div /> dominar o AquaNova</h2>
 
-                    <p class="text-[1.2rem] font-light dark:text-shadow-mb text-black w-[15rem] mx-auto mb-[3.5rem] lg:w-[100%] lg:text-[1.5rem] flex lg:items-center lg:justify-center dark:text-white">Ao aplicar nosso método completo, você vai conquistar:</p>
+                    <p className="text-[1.2rem] font-light dark:text-shadow-mb text-black w-[15rem] mx-auto mb-[3.5rem] lg:w-[100%] lg:text-[1.5rem] flex lg:items-center lg:justify-center dark:text-white">Ao aplicar nosso método completo, você vai conquistar:</p>
 
-                    <div id="grid-beneficios" class="lg:flex lg:flex-col lg:gap-[5rem] lg:px-[12rem]">
-                        <div id="grid-beneficios" class="lg:flex lg:flex-row lg:justify-center lg:self-center lg:gap-[5rem]">
+                    <div id="grid-beneficios" className="lg:flex lg:flex-col lg:gap-[5rem] lg:px-[12rem]">
+                        <div id="grid-beneficios" className="lg:flex lg:flex-row lg:justify-center lg:self-center lg:gap-[5rem]">
 
                             <CardHomeS
                                 img={theme === "dark" ? like : likeDark}
@@ -94,15 +91,15 @@ export function Home() {
                             />
 
                         </div>
-                        <button class=" mt-[3rem] w-[18rem] h-[4rem] border border-black text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem]">Saiba mais</button>
+                        <button className=" mt-[3rem] w-[18rem] h-[4rem] border border-black text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem]">Saiba mais</button>
 
                     </div>
                 </div>
 
-                <div id="quemsomos" class="lg:w-[100vw] dark:bg-[#0C0C0C] lg:mt-[-25rem]">
-                    <h1 class="flex justify-center mb-[2rem] lg:mt-[8rem] text-[2.5rem] dark:text-white text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
+                <div id="quemsomos" className="lg:w-[100vw] dark:bg-[#0C0C0C] lg:mt-[-25rem]">
+                    <h1 className="flex justify-center mb-[2rem] lg:mt-[8rem] text-[2.5rem] dark:text-white text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
 
-                    <div id="fotos" class="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
+                    <div id="fotos" className="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
                         <QuemSomosComp
                             img={fotoMenocci}
                             tittle={"Arthur Menocci"}
@@ -126,73 +123,29 @@ export function Home() {
                     </div>
                 </div>
            
-                <div id="componentes" class="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[4rem] dark:bg-[#0C0C0C]">
-                        <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C]">
-                            <h1 class="flex flex-row text-[1.5rem] lg:text-[2.5rem] font-inter font-bold gap-[.2rem] dark:text-white">Componentes e investimentos <img src={theme === "dark" ? smile : emojiSmileDark} alt="" className="lg:w-[2.5rem] lg:h-[1.7rem] lg:mt-[1rem]" /></h1>
-                            <img src={theme === "dark" ? sublinhado : sublinhadoDark} alt="" class="flex self-end" />
-                        </div>
-
-                        <div class="flex flex-col items-center mb-[3rem] text-[#0C0C0C]">
-                            <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold dark:text-white">Saiba onde comprar </h2>
-                            <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold dark:text-white">e quanto será seu investimento</h2>
-                        </div>
-
-                        <div id='video' class="w-[24rem] h-[18rem] lg:w-[50rem] lg:h-[30rem] bg-[#C4C4C4] text-black flex items-center justify-center mb-[2rem] lg:mb-[4rem]"><p>video</p></div>
-
-                        <h2 class="text-[1.5rem] text-[#0C0C0C] font-inter font-bold flex justify-center mb-[1.75rem] dark:text-white">Lista de Itens</h2>
-
-                        <div id="lista" class="text-[#0C0C0C] flex flex-col lg:flex-row lg:gap-[50rem] w-[100%] mb-[2rem] lg:mb-[4rem]">
-
-                            <div id="left" class="text-[1.25rem] lg:text-[1.5rem] font-bold font-inter dark:text-white">
-                                <p>
-                                    Sensor de Condutividade/TDS <br />
-                                    Sensor de Nível Ultrassônico <br />
-                                    Sensor de Pressão de Água  <br />
-                                    Sensor de Fluxo de Água <br />
-                                    Válvulas Solenoides 12V <br />
-                                    Relés de Estado Sólido <br />
-                                    Módulo Bluetooth <br />
-                                    MOSFET IRF520 <br />
-                                    Display LCD <br />
-                                </p>
-                            </div>
-
-                            <div id="right" class="text-[1.25rem] lg:text-[1.5rem] font-bold font-inter lg:text-right dark:text-white">
-                                <p>
-                                    4 LDRs <br />
-                                    Ponte H  <br />
-                                    Bateria de Lítio  <br />
-                                    Mini Painel Solar  <br />
-                                    Módulo Step-down  <br />
-                                    Controlador de Carga  <br />
-                                    2 Servomotores MG995  <br />
-                                    Carcaça para Membrana de 50 GPD  <br />
-                                </p>
-                            </div>
-                        </div>
-                </div>
+                <CompComponentes />
 
                 <div id="jogo" className="w-[100%] h-[100vh] dark:bg-dark-fade">
-                        <h1 class="text-[2.5rem] mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)] dark:text-white">Conheça nosso jogo</h1>
+                        <h1 className="text-[2.5rem] mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)] dark:text-white">Conheça nosso jogo</h1>
 
-                        <div id="img" class="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
-                            <img src={fotoJogo} alt="" class="flex w-[25rem] lg:w-[45.8rem] lg:h-[25.5rem] self-center rounded-[3.5rem]" />
+                        <div id="img" className="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
+                            <img src={fotoJogo} alt="" className="flex w-[25rem] lg:w-[45.8rem] lg:h-[25.5rem] self-center rounded-[3.5rem]" />
                         </div>
 
-                        <p class="w-[45.8rem] mx-auto px-[1.15rem] font-normal text-[1.25rem] text-[#0C0C0C] mb-[1.5rem] text-shadow-2xs dark:text-white">O cientista Dr. Elias criou um dessalinizador movido a energia solar, capaz de mudar o mundo. Mas sua invenção passou a ser alvo de grupos que querem usá-la para fins próprios. Agora, ele e seus ajudantes precisam proteger essa tecnologia a todo custo. Enfrente desafios, proteja o projeto e ajude a salvar o futuro da água no planeta.
+                        <p className="w-[45.8rem] mx-auto px-[1.15rem] font-normal text-[1.25rem] text-[#0C0C0C] mb-[1.5rem] text-shadow-2xs dark:text-white">O cientista Dr. Elias criou um dessalinizador movido a energia solar, capaz de mudar o mundo. Mas sua invenção passou a ser alvo de grupos que querem usá-la para fins próprios. Agora, ele e seus ajudantes precisam proteger essa tecnologia a todo custo. Enfrente desafios, proteja o projeto e ajude a salvar o futuro da água no planeta.
 
                             <br />Será você capaz de proteger o futuro da humanidade?</p>
 
-                        <div class="flex items-center justify-center self-center w-[100%]">
-                            <Link to={'/jogo'} class="w-[8rem] h-[2rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[0.75rem] text-[#0C0C0C] font-bold flex items-center justify-center cursor-pointer">Saiba mais</Link>
+                        <div className="flex items-center justify-center self-center w-[100%]">
+                            <Link to={'/jogo'} className="w-[8rem] h-[2rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[0.75rem] text-[#0C0C0C] font-bold flex items-center justify-center cursor-pointer">Saiba mais</Link>
                         </div>
                 </div>
 
-                <div id="referencias" class="bg-gradient-to-t from-neutral-900 to-neutral-900/0 dark:bg-[#131313] flex flex-col text-white h-[94vh] mt-[-18rem] lg:mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[0rem]">
-                        <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-shadow-xl text-white mb-[5rem] lg:mb-[8rem]">Referências</h1>
+                <div id="referencias" className="bg-white dark:bg-[#0C0C0C] flex flex-col text-white h-[94vh] mt-[-18rem] lg:mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[0rem]">
+                        <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-black dark:text-white mb-[5rem] lg:mb-[8rem]">Referências</h1>
 
                         <div class="lg:flex lg:flex-row">
-                            <div class="flex justify-center self-center lg:h-[15rem] lg:w-[80rem] lg:ml-[5rem] flex justify-center items-center text-[1.5rem] px-[1rem]">
+                            <div class="flex justify-center self-center lg:h-[15rem] lg:w-[80rem] lg:ml-[5rem] flex justify-center items-center text-[1.5rem] px-[1rem] text-black dark:text-white">
                                 <p>Saiba quais foram as principais fontes que embasaram nossos estudos, pesquisas e desenvolvimento do projeto AquaNova. Acreditamos na ciência, na tecnologia acessível e em soluções sustentáveis — por isso, cada dado, componente e ideia utilizada tem base em materiais confiáveis e atualizados. Confira abaixo as referências que ajudaram a tornar este projeto possível.</p>
                             </div>
 
@@ -201,7 +154,7 @@ export function Home() {
                             </div>
 
                         </div>
-                        <Link to={"/referencias"} class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem] lg:mt-[4rem]">Saiba mais</Link>
+                        <Link to={"/referencias"} class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem] lg:mt-[4rem] border border-black">Saiba mais</Link>
 
                 </div>
             </div>
