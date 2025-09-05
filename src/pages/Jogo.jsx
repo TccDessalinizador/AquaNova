@@ -8,11 +8,11 @@ export function Jogo() {
         <div class="">
             <Header />
 
-            <div id="pagina" className="w-[100%] bg-white h-[145vh] dark:bg-[#0C0C0C]">
+            <div id="pagina" className="w-[100%] bg-white h-[160vh] dark:bg-[#0C0C0C]">
                 <h1 class="mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)]">Conheça nosso jogo</h1>
 
                 <div id="img" class="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
-                    <img src={fotoJogo} alt="" class="flex w-[24.8rem] h-[14.5rem] self-center rounded-[3.5rem]"/>
+                    <img src={fotoJogo} alt="" class="flex w-[40rem] h-[25rem] self-center rounded-[3.5rem]"/>
                 </div>
 
                 <p class="px-[1.15rem] font-bold text-[1.25rem] text-black dark:text-white mb-[2rem] text-shadow-2xs lg:w-[70vw] lg:flex lg:mx-auto">Em um futuro próximo, o mundo enfrenta uma crise hídrica sem precedentes. Em meio ao caos, o brilhante cientista Dr. Elias desenvolve uma máquina revolucionária capaz de dessalinizar água usando energia solar — uma invenção que pode salvar milhões de vidas. Porém, essa tecnologia atrai a atenção de grupos sombrios, dispostos a tudo para roubá-la e usá-la em benefício próprio. <br />

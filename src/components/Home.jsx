@@ -137,7 +137,7 @@ export function Home() {
                             <br />Será você capaz de proteger o futuro da humanidade?</p>
 
                         <div className="flex items-center justify-center self-center w-[100%]">
-                            <Link to={'/jogo'} className="w-[8rem] h-[2rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[0.75rem] text-[#0C0C0C] font-bold flex items-center justify-center cursor-pointer">Saiba mais</Link>
+                            <Link to={'/jogo'} className="w-[18rem] h-[4rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[1rem] text-[#0C0C0C] font-bold flex items-center justify-center cursor-pointer">Saiba mais</Link>
                         </div>
                 </div>
 
@@ -154,7 +154,7 @@ export function Home() {
                             </div>
 
                         </div>
-                        <Link to={"/referencias"} class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem] lg:mt-[4rem] border border-black">Saiba mais</Link>
+                        <Link to={"/referencias"} class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem] lg:mt-[4rem] border border-black">Saiba mais</Link>
 
                 </div>
             </div>

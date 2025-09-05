@@ -16,17 +16,7 @@
 
 }
 
-.theme-black {
-  --color-primary: red;
-}
-
 select {
   -webkit-appearance: none; /* Removes default Safari/Chrome styling */
   /* Other styles */
 }
-
-/* #pagina-it {
-  background: linear-gradient(180deg, rgba(18, 18, 18, 0.00) 9.62%, #131313 62.5%);
-  background: linear-gradient(to top, #1a1a1a, #1f1f1f, #2a2a2a, #333333);
-
-} */

@@ -7,8 +7,8 @@ export function Referencias() {
         <div>
             <Header />
 
-            <div id="pagina" class="bg-white dark:bg-[#131313] lg:bg-gradient-to-t from-neutral-900 to-neutral-900/0 flex flex-col text-white h-[94vh] lg:h-[92vh] mt-[4rem]">
-                <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-shadow-xl">Referências</h1>
+            <div id="pagina" class="bg-white dark:bg-[#131313] flex flex-col text-white h-[94vh] lg:h-[92vh] mt-[4rem]">
+                <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-black dark:text-white">Referências</h1>
 
                 <div class="lg:flex lg:flex-row">
                     <div class="w-[100%] flex justify-center self-center lg:">
