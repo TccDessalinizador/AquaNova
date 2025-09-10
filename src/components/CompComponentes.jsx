@@ -10,7 +10,7 @@ export function CompComponentes() {
     return (
         <div id="componentes" className="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[4rem] dark:bg-[#0C0C0C]">
             <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C]">
-                <h1 class="flex flex-row text-[1.5rem] lg:text-[2.5rem] font-inter font-bold gap-[.2rem] dark:text-white">Componentes e investimentos <img src={theme === "dark" ? smile : emojiSmileDark} alt="" className="lg:w-[2rem] lg:h-[1.7rem] lg:mt-[1rem]" /></h1>
+                <h1 class="flex flex-row text-[1.2rem] lg:text-[2.5rem] font-inter font-bold gap-[.2rem] dark:text-white">Componentes e investimentos <img src={theme === "dark" ? smile : emojiSmileDark} alt="" className="lg:w-[2rem] lg:h-[1.7rem] lg:mt-[1rem]" /></h1>
                 <img src={theme === "dark" ? sublinhado : sublinhadoDark} alt="" class="flex self-end" />
             </div>
 
@@ -19,7 +19,7 @@ export function CompComponentes() {
                 <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold dark:text-white">e quanto será seu investimento</h2>
             </div>
 
-            <div id='video' class="w-[24rem] h-[18rem] lg:w-[50rem] lg:h-[30rem] bg-[#C4C4C4] text-black flex items-center justify-center mb-[2rem] lg:mb-[4rem]"><p>video</p></div>
+            <div id='video' class="w-[20rem] h-[14rem] lg:w-[50rem] lg:h-[30rem] bg-[#C4C4C4] text-black flex items-center justify-center mb-[2rem] lg:mb-[4rem]"><p>video</p></div>
 
             <h2 class="text-[1.5rem] text-[#0C0C0C] font-inter font-bold flex justify-center mb-[1.75rem] dark:text-white">Lista de Itens</h2>
 

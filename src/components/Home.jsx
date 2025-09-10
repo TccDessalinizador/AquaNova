@@ -36,7 +36,7 @@ export function Home() {
                 <h1 className="text-[2.25rem] text-[#0C0C0C] font-bold text-shadow-mb mt-[rem] flex flex-col justify-center text-center mb-[.5rem] lg:text-[4.5rem] dark:text-white dark:text-shadow-none">Sol que dessalina <br /> <p className=" dark:text-white dark:text-shadow-none text-[2rem] text-[#0C0C0C] font-bold text-shadow-mb lg:text-[4.5rem]">Futuro que se ilumina</p></h1>
                 <p className="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[2rem] lg:w-[60rem] lg:justify-center">Tecnologia limpa e 100% autônoma que garante água potável às comunidades do nordeste.</p>
 
-                <div id="separacao" className="flex mx-auto w-[24.5rem] h-[0.18rem] bg-[#000000] mb-[7rem] dark:bg-white"></div>
+                <div id="separacao" className="flex mx-auto w-[20rem] lg:w-[24.5rem] h-[0.18rem] bg-[#000000] mb-[7rem] dark:bg-white"></div>
 
                 <p className="text-[2rem] text-[#0C0C0C] font bold flex justify-center mb-[.5rem] lg:text-[3rem] dark:text-white">Saiba como funciona</p>
                 <p className="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[5.5rem] lg:w-[60rem] lg:justify-center">Veja como o AquaNova purifica água salobra com energia solar — e como aplicar isso no semiárido.</p>
@@ -96,7 +96,7 @@ export function Home() {
                     </div>
                 </div>
 
-                <div id="quemsomos" className="lg:w-[100vw] dark:bg-[#0C0C0C] lg:mt-[-25rem]">
+                <div id="quemsomos" className="lg:w-[100vw] dark:bg-[#0C0C0C] lg:mt-[-25rem] mb-[25rem]">
                     <h1 className="flex justify-center mb-[2rem] lg:mt-[8rem] text-[2.5rem] dark:text-white text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
 
                     <div id="fotos" className="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
@@ -125,14 +125,14 @@ export function Home() {
            
                 <CompComponentes />
 
-                <div id="jogo" className="w-[100%] h-[100vh] dark:bg-dark-fade">
-                        <h1 className="text-[2.5rem] mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)] dark:text-white">Conheça nosso jogo</h1>
+                <div id="jogo" className="w-[100%] h-[100vh] dark:bg-dark-fade mb-[10rem]">
+                        <h1 className="ml-[1rem] lg:ml-0 text-[2.5rem] mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)] dark:text-white">Conheça nosso jogo</h1>
 
                         <div id="img" className="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
-                            <img src={fotoJogo} alt="" className="flex w-[25rem] lg:w-[45.8rem] lg:h-[25.5rem] self-center rounded-[3.5rem]" />
+                            <img src={fotoJogo} alt="" className="flex w-[22rem] lg:w-[45.8rem] lg:h-[25.5rem] self-center rounded-[3.5rem]" />
                         </div>
 
-                        <p className="w-[45.8rem] mx-auto px-[1.15rem] font-normal text-[1.25rem] text-[#0C0C0C] mb-[1.5rem] text-shadow-2xs dark:text-white">O cientista Dr. Elias criou um dessalinizador movido a energia solar, capaz de mudar o mundo. Mas sua invenção passou a ser alvo de grupos que querem usá-la para fins próprios. Agora, ele e seus ajudantes precisam proteger essa tecnologia a todo custo. Enfrente desafios, proteja o projeto e ajude a salvar o futuro da água no planeta.
+                        <p className="w-[22rem] lg:w-[45.8rem] mx-auto px-[1.15rem] font-normal text-[1.25rem] text-[#0C0C0C] mb-[1.5rem] text-shadow-2xs dark:text-white">O cientista Dr. Elias criou um dessalinizador movido a energia solar, capaz de mudar o mundo. Mas sua invenção passou a ser alvo de grupos que querem usá-la para fins próprios. Agora, ele e seus ajudantes precisam proteger essa tecnologia a todo custo. Enfrente desafios, proteja o projeto e ajude a salvar o futuro da água no planeta.
 
                             <br />Será você capaz de proteger o futuro da humanidade?</p>
 
@@ -141,7 +141,7 @@ export function Home() {
                         </div>
                 </div>
 
-                <div id="referencias" className="bg-white dark:bg-[#0C0C0C] flex flex-col text-white h-[94vh] mt-[-18rem] lg:mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[0rem]">
+                <div id="referencias" className="bg-white dark:bg-[#0C0C0C] flex flex-col text-white h-[94vh] mt-[-18rem] lg:mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[0rem]]">
                         <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-black dark:text-white mb-[5rem] lg:mb-[8rem]">Referências</h1>
 
                         <div class="lg:flex lg:flex-row">
