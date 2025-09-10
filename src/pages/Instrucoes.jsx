@@ -14,7 +14,7 @@ export function Instrucoes() {
             <Header />
 
             <div id="pagina-it" class="bg-white dark:bg-[#0C0C0C] text-white px-[2.5rem] py-[2rem]">
-                <h1 class="text-[2rem] text-[#0C0C0C] font-bold flex justify-center">Saiba como funciona</h1>
+                <h1 class="text-[2rem] text-[#0C0C0C] font-bold flex justify-center mt-[3rem]">Saiba como funciona</h1>
 
                 <div class="lg:flex lg:flex-row lg:gap-[5rem] lg:justify-between lg:text-[0.75rem]">
                     <div class="" id='instrucao1'>
