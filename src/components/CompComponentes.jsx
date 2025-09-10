@@ -8,7 +8,7 @@ import { ThemeContext } from '../context/ThemeContext'
 export function CompComponentes() {
     const { theme } = useContext(ThemeContext)
     return (
-        <div id="componentes" className="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[4rem] dark:bg-[#0C0C0C]">
+        <div id="componentes" className="bg-white text-white flex flex-col items-center px-[1.5rem] mt-[3rem] dark:bg-[#0C0C0C]">
             <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C]">
                 <h1 class="flex flex-row text-[1.2rem] lg:text-[2.5rem] font-inter font-bold gap-[.2rem] dark:text-white">Componentes e investimentos <img src={theme === "dark" ? smile : emojiSmileDark} alt="" className="lg:w-[2rem] lg:h-[1.7rem] lg:mt-[1rem]" /></h1>
                 <img src={theme === "dark" ? sublinhado : sublinhadoDark} alt="" class="flex self-end" />
@@ -16,7 +16,7 @@ export function CompComponentes() {
 
             <div class="flex flex-col items-center mb-[3rem] text-[#0C0C0C]">
                 <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold dark:text-white">Saiba onde comprar </h2>
-                <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold dark:text-white">e quanto será seu investimento</h2>
+                <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold dark:text-white ml-[2.8rem] lg:ml-0">e quanto será seu investimento</h2>
             </div>
 
             <div id='video' class="w-[20rem] h-[14rem] lg:w-[50rem] lg:h-[30rem] bg-[#C4C4C4] text-black flex items-center justify-center mb-[2rem] lg:mb-[4rem]"><p>video</p></div>
