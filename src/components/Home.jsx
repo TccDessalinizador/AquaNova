@@ -32,7 +32,7 @@ export function Home() {
         <div>
             <Header />
 
-            <div id="pg1" className="dark:bg-[#0C0C0C] lg:pt-[8rem]">
+            <div id="pg1" className="dark:bg-[#0C0C0C] lg:pt-[8rem] pt-[7rem]">
                 <h1 className="text-[2.25rem] text-[#0C0C0C] font-bold text-shadow-mb mt-[rem] flex flex-col justify-center text-center mb-[.5rem] lg:text-[4.5rem] dark:text-white dark:text-shadow-none">Sol que dessalina <br /> <p className=" dark:text-white dark:text-shadow-none text-[2rem] text-[#0C0C0C] font-bold text-shadow-mb lg:text-[4.5rem]">Futuro que se ilumina</p></h1>
                 <p className="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[2rem] lg:w-[60rem] lg:justify-center">Tecnologia limpa e 100% autônoma que garante água potável às comunidades do nordeste.</p>
 
@@ -154,7 +154,7 @@ export function Home() {
                             </div>
 
                         </div>
-                        <Link to={"/referencias"} class=" mt-[3rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem] lg:mt-[4rem] border border-black">Saiba mais</Link>
+                        <Link to={"/referencias"} class=" mt-[-.5rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem] lg:mt-[4rem] border border-black">Saiba mais</Link>
 
                 </div>
             </div>
