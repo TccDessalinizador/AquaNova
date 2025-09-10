@@ -8,7 +8,7 @@ export function Jogo() {
         <div class="">
             <Header />
 
-            <div id="pagina" className="w-[100%] bg-white h-[160vh] dark:bg-[#0C0C0C] pt-[3rem]">
+            <div id="pagina" className="w-[100%] bg-white h-[180vh] dark:bg-[#0C0C0C] pt-[3rem]">
                 <h1 class="mt-[2.5rem] mb-[2rem] flex justify-center text-[2rem] text-black dark:text-white font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)]">Conheça nosso jogo</h1>
 
                 <div id="img" class="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">

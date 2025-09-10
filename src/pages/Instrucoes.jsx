@@ -1,14 +1,18 @@
 import { Header } from '../components/Header.jsx'
-import um from '../assets/um.svg'
-import dois from '../assets/dois.svg'
-import tres from '../assets/tres.svg'
+import um from "../assets/um.png"
+import umLight from "../assets/umLight.png"
+import dois from "../assets/dois.png"
+import doisLight from "../assets/doisLight.png"
+import tres from "../assets/tres.png"
+import tresLight from "../assets/tresLight.png"
 import instrucao1 from '../assets/instrucao1.png'
 import instrucao2 from '../assets/instrucao2.png'
 import instrucao3 from '../assets/instrucao3.png'
-import { Link } from 'react-router-dom'
-
+import { useContext, useState } from 'react'
+import { ThemeContext } from '../context/ThemeContext'
 
 export function Instrucoes() {
+    const { theme } = useContext(ThemeContext)
     return (
         <div>
             <Header />
@@ -19,7 +23,7 @@ export function Instrucoes() {
                 <div class="lg:flex lg:flex-row lg:gap-[5rem] lg:justify-between lg:text-[0.75rem]">
                     <div class="" id='instrucao1'>
                         <div id="imagens" class="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
-                            <img src={um} alt="" class="" />
+                            <img src={theme === "dark" ? umLight : um} className="w-[4rem] h-[6rem]" />
                             <img src={instrucao1} alt="" class="mt-[-1.8rem]" />
                         </div>
                         <h2 class="text-[1.5rem] font-bold font-inter flex justify-center mb-[.5rem] mt-[-3.5rem] text-black dark:text-white">Preparos para ligar</h2>
@@ -46,7 +50,7 @@ export function Instrucoes() {
 
                     <div id="instrucao2">
                         <div id="imagem" class="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
-                            <img src={dois} alt="" class="" />
+                            <img src={theme === "dark" ? doisLight : dois} className="w-[4rem] h-[6rem]" />
                             <img src={instrucao2} alt="" class="mt-[-2rem]" />
                         </div>
                         <h2 class="text-[1.5rem] text-black dark:text-white font-bold font-inter flex justify-center mb-[1.5rem] mt-[-3rem]">Verifique as conexões</h2>
@@ -66,7 +70,7 @@ export function Instrucoes() {
 
                     <div id="instrucao3">
                         <div class="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
-                            <img src={tres} alt="" class="" />
+                            <img src={theme === "dark" ? tresLight : tres} className="w-[4rem] h-[6rem]" />
                             <img src={instrucao3} alt="" class="mt-[-1.8rem]" />
                         </div>
                         <h2 class="text-[1.5rem] text-black dark:text-white font-bold font-inter flex justify-center mb-[.5rem]">Monitoramento</h2>
@@ -91,7 +95,7 @@ export function Instrucoes() {
                 </div>
 
                     <div id='video'>
-                        <div class="lg:bg-white lg:w-[70rem] lg:h-[35rem] lg:mt-[1rem] lg:self-center lg:flex"></div>
+                        <div class="lg:bg-white lg:w-[70rem] lg:h-[35rem] lg:mt-[1rem] lg:self-center lg:flex lg:mx-auto lg:text-black lg:items-center lg:justify-center">video</div>
                     </div>
             </div>
         </div>
