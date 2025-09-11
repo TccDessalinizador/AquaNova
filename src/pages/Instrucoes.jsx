@@ -17,17 +17,18 @@ export function Instrucoes() {
         <div>
             <Header />
 
-            <div id="pagina-it" class="bg-white dark:bg-[#0C0C0C] text-white px-[2.5rem] py-[2rem]">
-                <h1 class="text-[2rem] text-[#0C0C0C] font-bold flex justify-center]">Saiba como funciona</h1>
+            <div id="pagina-it" class="bg-white dark:bg-[#0C0C0C] text-white px-[2.5rem] py-[2rem] pt-[6rem] lg:pt-[8rem] w-[100vw]">
+                <h1 className="text-[2rem] dark:text-white text-[#0C0C0C] font-bold flex justify-center w-[96vw] mb-[3rem]">Saiba como funciona</h1>
 
                 <div class="lg:flex lg:flex-row lg:gap-[5rem] lg:justify-between lg:text-[0.75rem]">
-                    <div class="" id='instrucao1'>
-                        <div id="imagens" class="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
+
+                    <div class="" id='instrucao1' className='w-[20rem] lg:w-[30rem]'>
+                        <div id="imagens" className="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
                             <img src={theme === "dark" ? umLight : um} className="w-[4rem] h-[6rem]" />
-                            <img src={instrucao1} alt="" class="mt-[-1.8rem]" />
+                            <img src={instrucao1} alt="" class="" />
                         </div>
-                        <h2 class="text-[1.5rem] font-bold font-inter flex justify-center mb-[.5rem] mt-[-3.5rem] text-black dark:text-white">Preparos para ligar</h2>
-                        <p class="text-[1.25rem] font-inter text-black dark:text-white">
+                        <h2 class="text-[1.5rem] font-bold font-inter flex justify-center mb-[.5rem] mt-[-2rem] text-black dark:text-white">Preparos para ligar</h2>
+                        <p class="text-[1.25rem] font-inter text-black dark:text-white mt-[1rem]">
                             1-Instale o AquaNova em uma área externa com boa incidência solar.
                             <br />
                             <br />
@@ -48,13 +49,13 @@ export function Instrucoes() {
                         </p>
                     </div>
 
-                    <div id="instrucao2">
+                    <div id="instrucao2" className='w-[20rem] lg:w-[30rem]'>
                         <div id="imagem" class="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
                             <img src={theme === "dark" ? doisLight : dois} className="w-[4rem] h-[6rem]" />
-                            <img src={instrucao2} alt="" class="mt-[-2rem]" />
+                            <img src={instrucao2} alt="" class="mt-[1rem]" />
                         </div>
                         <h2 class="text-[1.5rem] text-black dark:text-white font-bold font-inter flex justify-center mb-[1.5rem] mt-[-3rem]">Verifique as conexões</h2>
-                        <p class="text-[1.25rem] text-black dark:text-white font-inter mt-[-1rem]">
+                        <p class="text-[1.25rem] text-black dark:text-white font-inter mt-[1rem]">
                             1-A água salobra é direcionada para o recipiente de aquecimento.
                             <br />
                             <br />
@@ -68,13 +69,13 @@ export function Instrucoes() {
                         </p>
                     </div>
 
-                    <div id="instrucao3">
+                    <div id="instrucao3" className='w-[20rem] lg:w-[30rem]'>
                         <div class="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
                             <img src={theme === "dark" ? tresLight : tres} className="w-[4rem] h-[6rem]" />
-                            <img src={instrucao3} alt="" class="mt-[-1.8rem]" />
+                            <img src={instrucao3} alt="" className="mt-[2.3rem]" />
                         </div>
                         <h2 class="text-[1.5rem] text-black dark:text-white font-bold font-inter flex justify-center mb-[.5rem]">Monitoramento</h2>
-                        <p class="text-[1.25rem] font-inter text-black dark:text-white">
+                        <p class="text-[1.25rem] font-inter text-black dark:text-white mt-[1rem]">
                             1- Todos os dados são enviados em tempo real via Bluetooth.
                             Você pode visualizar:
                             <ul>
@@ -94,8 +95,8 @@ export function Instrucoes() {
 
                 </div>
 
-                    <div id='video'>
-                        <div class="lg:bg-white lg:w-[70rem] lg:h-[35rem] lg:mt-[1rem] lg:self-center lg:flex lg:mx-auto lg:text-black lg:items-center lg:justify-center">video</div>
+                    <div id='video' className='mt-[1rem]'>
+                        <div class="lg:bg-black lg:dark:bg-white w-[20rem] h-[10rem] bg-pink-500 lg:w-[70rem] lg:h-[35rem] lg:mt-[1rem] self-center flex lg:mx-auto  text-white dark:text-black items-center justify-center">video</div>
                     </div>
             </div>
         </div>

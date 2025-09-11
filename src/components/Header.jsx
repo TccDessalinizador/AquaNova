@@ -13,7 +13,7 @@ export function Header() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
     return (
-        <div className="w-full h-[4rem] lg:h-[5rem] flex items-center justify-between bg-[#0C0C0C] px-4 fixed z-10 top-0">
+        <div className="w-[100vw] h-[4rem] lg:h-[5rem] flex items-center justify-between bg-[#0C0C0C] px-4 fixed z-10 top-0">
 
             {/* Botão Menu Hambúrguer Mobile */}
             <div className="flex items-center lg:hidden">
