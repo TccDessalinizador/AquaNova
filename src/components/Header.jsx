@@ -81,7 +81,7 @@ export function Header() {
                         <Link to={"/jogo"} className="text-white mb-4 text-lg flex gap-[1rem] mb-[2rem]" onClick={() => setSidebarOpen(false)}><img src={jogoHeader} alt="" className='w-[1.5rem]'/> Jogo</Link>
                         <Link to={"/quemsomos"} className="text-white mb-4 text-lg flex gap-[1rem]" onClick={() => setSidebarOpen(false)}><img src={sobreNosHeader} alt="" className='w-[1.5rem]'/> Quem somos</Link>
 
-                        <div className="mt-[19rem] lg:flex lg:w-[30rem] justify-end lg:gap-[1rem] h-[3rem] my-auto">
+                        <div className="mt-[9rem] lg:flex lg:w-[30rem] justify-end lg:gap-[1rem] h-[3rem] my-auto">
                             <div
                                 className="flex items-center bg-[#111827] rounded-full p-1 cursor-pointer transition-colors duration-800"
                                 onClick={toggle}
