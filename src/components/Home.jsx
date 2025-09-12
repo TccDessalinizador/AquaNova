@@ -96,7 +96,7 @@ export function Home() {
                     </div>
                 </div>
 
-                <div id="quemsomos" className="lg:w-[100vw] dark:bg-[#0C0C0C] lg:mt-[-25rem] mb-[30rem] lg:mb-[10rem]">
+                <div id="quemsomos" className="lg:w-[100vw] dark:bg-[#0C0C0C] lg:mt-[-25rem] mb-[35rem] lg:mb-[10rem]">
                     <h1 className="flex justify-center mb-[2rem] lg:mt-[8rem] text-[2.5rem] dark:text-white text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
 
                     <div id="fotos" className="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
@@ -125,7 +125,7 @@ export function Home() {
            
                 <CompComponentes />
 
-                <div id="jogo" className="w-[100%] h-[100vh] dark:bg-dark-fade mb-[10rem]">
+                <div id="jogo" className="w-[100%] h-[100vh] dark:bg-dark-fade mb-[15rem]">
                         <h1 className="ml-[1rem] lg:ml-0 text-[2.5rem] mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)] dark:text-white">Conheça nosso jogo</h1>
 
                         <div id="img" className="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
@@ -141,7 +141,7 @@ export function Home() {
                         </div>
                 </div>
 
-                <div id="referencias" className="bg-white dark:bg-[#0C0C0C] flex flex-col text-white h-[94vh] mt-[-18rem] lg:mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[0rem]]">
+                <div id="referencias" className="bg-white dark:bg-[#0C0C0C] flex flex-col text-white h-[94vh] mt-[-18rem] lg:mt-[4rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[0rem] h-[130vh]">
                         <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-black dark:text-white mb-[5rem] lg:mb-[8rem]">Referências</h1>
 
                         <div class="lg:flex lg:flex-row">

@@ -9,14 +9,14 @@ export function CompComponentes() {
     const { theme } = useContext(ThemeContext)
     return (
         <div id="componentes" className="bg-white text-white flex flex-col items-center px-[1.5rem] mt-[3rem] dark:bg-[#0C0C0C]">
-            <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C] lg:w-[100vw] w-[22rem] mr-[6rem] lg:mr-[0]">
+            <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C] lg:w-[100vw] w-[22rem] mr-[3rem] lg:mr-[0]">
                 <h1 class="w-[100vw] flex flex-row text-[1.4rem] justify-center items-center lg:text-[2.5rem] font-inter font-bold gap-[.2rem] dark:text-white">Componentes e investimentos <img src={theme === "dark" ? smile : emojiSmileDark} alt="" className="lg:w-[2rem] lg:h-[1.7rem] lg:mt-[1rem] w-[1.5rem] h-[1.5rem]" /></h1>
                 <img src={theme === "dark" ? sublinhado : sublinhadoDark} alt="" class="flex self-center lg:ml-[25rem] ml-[10rem]" />
             </div>
 
             <div class="flex flex-col items-center mb-[3rem] text-[#0C0C0C]">
                 <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold dark:text-white">Saiba onde comprar </h2>
-                <h2 class="text-[1.5rem] pl-[2.4rem] lg:text-[2rem] font-inter font-bold dark:text-white ml-[2.8rem] lg:ml-0">e quanto será seu investimento</h2>
+                <h2 class="text-[1.5rem] pl-[.8rem] lg:text-[2rem] font-inter font-bold dark:text-white ml-[2.8rem] lg:ml-0">e quanto será seu investimento</h2>
             </div>
 
             <div id='video' class="w-[20rem] h-[14rem] lg:w-[50rem] lg:h-[30rem] bg-[#C4C4C4] text-black flex items-center justify-center mb-[2rem] lg:mb-[4rem]"><p>video</p></div>
