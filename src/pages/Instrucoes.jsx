@@ -21,7 +21,7 @@ export function Instrucoes() {
             <Header />
 
             <div id="pagina-it" class="bg-[#F7F7F7] dark:bg-[#0C0C0C] text-white px-[2.5rem] py-[2rem] pt-[6rem] lg:pt-[8rem] w-[100vw]">
-                <h1 className="text-[2rem] dark:text-white text-[#0C0C0C] font-bold flex justify-center w-[85vw] mb-[3rem]">Saiba como funciona</h1>
+                <h1 className="text-[2rem] dark:text-white text-[#0C0C0C] font-bold flex justify-center w-[95vw] mb-[3rem]">Saiba como funciona</h1>
 
                 <div class="lg:flex lg:flex-row lg:gap-[5rem] lg:justify-between lg:text-[0.75rem]">
 

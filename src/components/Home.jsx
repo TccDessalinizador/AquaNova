@@ -91,7 +91,7 @@ export function Home() {
                             />
 
                         </div>
-                        <button className=" mt-[3rem] w-[18rem] h-[4rem] border border-black text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem]">Saiba mais</button>
+                        <Link to={"/instrucoes"} className=" mt-[3rem] w-[18rem] h-[4rem] border border-black text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem]">Saiba mais</Link>
 
                     </div>
                 </div>
