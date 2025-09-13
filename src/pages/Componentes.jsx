@@ -19,7 +19,7 @@ export function Componentes() {
         <div>
             <Header />
             {/* bg-[#0C0C0C] */}
-            <div id="pagina" className="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[4rem] dark:bg-[#0C0C0C] w-[100vw]">
+            <div id="pagina" className="bg-white text-white pt-[4rem] flex flex-col items-center px-[1.5rem] mt-[4rem] dark:bg-[#0C0C0C] w-[100vw] lg:w-[100vw]">
                 <CompComponentes />
 
                 <h2 className="text-[2rem] font-inter font-bold flex justify-center mb-[1rem] text-[#0C0C0C] dark:text-white">Comprar</h2>

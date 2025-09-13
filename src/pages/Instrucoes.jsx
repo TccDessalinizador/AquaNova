@@ -28,7 +28,7 @@ export function Instrucoes() {
                     <div class="" id='instrucao1' className='w-[20rem] lg:w-[30rem]'>
                         <div id="imagens" className="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
                             <img src={theme === "dark" ? umLight : um} className="w-[4rem] h-[6rem]" />
-                            <img src={theme === "dark" ? instrucao1 : instrucao1Light} className="w-[10rem] h-[10rem] mb-[4rem]"/>
+                            <img src={theme === "dark" ? instrucao1 : instrucao1Light} className="dark:w-[9rem] dark:h-[10rem] w-[10rem] h-[10rem] mb-[4rem] mt-[1rem]"/>
                         </div>
                         <h2 class="text-[1.5rem] font-bold font-inter flex justify-center mb-[.5rem] mt-[-2rem] text-black dark:text-white">Preparos para ligar</h2>
                         <p class="text-[1.25rem] font-inter text-black dark:text-white mt-[1rem]">
@@ -55,7 +55,7 @@ export function Instrucoes() {
                     <div id="instrucao2" className='w-[20rem] lg:w-[30rem]'>
                         <div id="imagem" class="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
                             <img src={theme === "dark" ? doisLight : dois} className="w-[4rem] h-[6rem]" />
-                            <img src={theme === "dark" ? instrucao2 : instrucao2Light} className="w-[10rem] h-[10rem] mb-[5rem]"/>
+                            <img src={theme === "dark" ? instrucao2 : instrucao2Light} className="dark:w-[15rem] dark:h-[15rem] w-[10rem] h-[10rem] mb-[4rem] dark:mb-[0rem] mt-[2rem] dark:mt-0 "/>
                         </div>
                         <h2 class="text-[1.5rem] text-black dark:text-white font-bold font-inter flex justify-center mb-[1.5rem] mt-[-3rem]">Verifique as conexões</h2>
                         <p class="text-[1.25rem] text-black dark:text-white font-inter mt-[1rem]">
@@ -74,8 +74,8 @@ export function Instrucoes() {
 
                     <div id="instrucao3" className='w-[20rem] lg:w-[30rem]'>
                         <div class="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
-                            <img src={theme === "dark" ? tresLight : tres} className="w-[4rem] h-[6rem]" />
-                            <img src={theme === "dark" ? instrucao3 : instrucao3Light} className="w-[10rem] h-[10rem] mb-[2rem]"/>
+                            <img src={theme === "dark" ? tresLight : tres} className="w-[4rem] h-[6rem] " />
+                            <img src={theme === "dark" ? instrucao3 : instrucao3Light} className="w-[10rem] h-[10rem] mb-[1rem] mt-[1rem]"/>
                         </div>
                         <h2 class="text-[1.5rem] text-black dark:text-white font-bold font-inter flex justify-center mb-[.5rem]">Monitoramento</h2>
                         <p class="text-[1.25rem] font-inter text-black dark:text-white mt-[1rem]">
