@@ -96,7 +96,7 @@ export function Home() {
                     </div>
                 </div>
 
-                <div id="quemsomos" className="lg:w-[90vw] lg:mx-auto border border-pink-500 dark:bg-[#0C0C0C] lg:mt-[-25rem] mb-[35rem] lg:mb-[10rem]">
+                <div id="quemsomos" className="lg:w-[90vw] lg:mx-auto dark:bg-[#0C0C0C] lg:mt-[-25rem] mb-[35rem] lg:mb-[10rem]">
                     <h1 className="flex justify-center mb-[2rem] lg:mt-[8rem] text-[2.5rem] dark:text-white text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
 
                     <div id="fotos" className="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">

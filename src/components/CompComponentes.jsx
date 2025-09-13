@@ -23,7 +23,7 @@ export function CompComponentes() {
 
             <h2 class="text-[2rem] text-[#0C0C0C] font-inter font-bold flex self-center justify-center mb-[1.75rem] dark:text-white">Lista de Itens</h2>
 
-            <div id="lista" class="text-[#0C0C0C] flex flex-col lg:flex-row lg:gap-[50rem] w-[100%] mb-[2rem] lg:mb-[4rem] px-[1rem] lg:justify-between">
+            <div id="lista" class="text-[#0C0C0C] lg:w-[100vw] lg:justify-center lg:self-center flex flex-col lg:flex-row lg:gap-[50rem] w-[100%] mb-[2rem] lg:mb-[4rem] px-[1rem]  border border-pink-500">
 
                 <div id="left" class="text-[1.25rem] lg:text-[1.5rem] font-bold font-inter dark:text-white">
                     <p>
