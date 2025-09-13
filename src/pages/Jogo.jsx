@@ -8,7 +8,7 @@ export function Jogo() {
         <div class="">
             <Header />
 
-            <div id="pagina" className="w-[100%] bg-white h-[180vh] dark:bg-[#0C0C0C] pt-[3rem]">
+            <div id="pagina" className="w-[100%] bg-white h-[180vh] lg:h-[130vh] dark:bg-[#0C0C0C] pt-[3rem]">
                 <h1 class="mt-[2.5rem] mb-[2rem] flex justify-center text-[2rem] text-black dark:text-white font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)]">Conheça nosso jogo</h1>
 
                 <div id="img" class="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
@@ -22,7 +22,7 @@ export function Jogo() {
                     <button class="w-[7.5rem] h-[3rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[0.75rem] text-[#0C0C0C] font-bold">Jogue agora</button>
                 </div>
 
-                <div className="mt-[1rem] flex mx-auto bg-pink-500 border border-red w-[22rem] lg:w-[27rem] h-[14rem] lg:w-[50rem] lg:h-[22rem] ">video</div>
+                <div className="mt-[1rem] flex mx-auto bg-pink-500 border border-red w-[22rem] lg:w-[27rem] h-[16rem] lg:w-[50rem] lg:h-[22rem] ">video</div>
             </div>
         </div>
     )

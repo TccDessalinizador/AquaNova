@@ -8,7 +8,7 @@ import { ThemeContext } from '../context/ThemeContext'
 export function CompComponentes() {
     const { theme } = useContext(ThemeContext)
     return (
-        <div id="componentes" className="bg-white text-white flex flex-col items-center px-[1.5rem] mt-[3rem] dark:bg-[#0C0C0C]">
+        <div id="componentes" className="bg-white text-white flex flex-col items-center px-[1.5rem] mt-[3rem] dark:bg-[#0C0C0C] w-[100vw]">
             <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C] lg:w-[100vw] w-[22rem] mr-[3rem] lg:mr-[0]">
                 <h1 class="w-[100vw] flex flex-row text-[1.4rem] justify-center items-center lg:text-[2.5rem] font-inter font-bold gap-[.2rem] dark:text-white">Componentes e investimentos <img src={theme === "dark" ? smile : emojiSmileDark} alt="" className="lg:w-[2rem] lg:h-[1.7rem] lg:mt-[1rem] w-[1.5rem] h-[1.5rem]" /></h1>
                 <img src={theme === "dark" ? sublinhado : sublinhadoDark} alt="" class="flex self-center lg:ml-[25rem] ml-[10rem]" />
