@@ -8,9 +8,9 @@ import { ThemeContext } from '../context/ThemeContext'
 export function CompComponentes() {
     const { theme } = useContext(ThemeContext)
     return (
-        <div id="componentes" className="bg-white text-white flex flex-col items-center px-[1.5rem] mt-[3rem] dark:bg-[#0C0C0C] w-[100vw] lg:w-[95vw]">
+        <div id="componentes" className="bg-white text-white flex flex-col items-center px-[1.5rem] mt-[3rem] dark:bg-[#0C0C0C] w-[100vw] lg:w-[95vw] lg:mx-auto">
             <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C] lg:w-[100vw] w-[22rem] mr-[3rem] lg:mr-[0]">
-                <h1 class="w-[90vw] flex flex-row text-[1.4rem] justify-center self-center items-center lg:text-[2.5rem] font-inter font-bold gap-[.2rem] dark:text-white">Componentes e investimentos <img src={theme === "dark" ? smile : emojiSmileDark} alt="" className="lg:w-[2rem] lg:h-[1.7rem] lg:mt-[1rem] w-[1.5rem] h-[1.5rem]" /></h1>
+                <h1 class="w-[90%] flex flex-row text-[1.4rem] justify-center self-center items-center lg:text-[2.5rem] font-inter font-bold gap-[.2rem] dark:text-white">Componentes e investimentos <img src={theme === "dark" ? smile : emojiSmileDark} alt="" className="lg:w-[2rem] lg:h-[1.7rem] lg:mt-[1rem] w-[1.5rem] h-[1.5rem]" /></h1>
                 <img src={theme === "dark" ? sublinhado : sublinhadoDark} alt="" class="flex self-center lg:ml-[25rem] ml-[10rem]" />
             </div>
 
@@ -23,7 +23,7 @@ export function CompComponentes() {
 
             <h2 class="text-[2rem] text-[#0C0C0C] font-inter font-bold flex self-center justify-center mb-[1.75rem] dark:text-white">Lista de Itens</h2>
 
-            <div id="lista" class="text-[#0C0C0C] lg:w-[100vw] lg:justify-center lg:self-center flex flex-col lg:flex-row lg:gap-[50rem] w-[100%] mb-[2rem] lg:mb-[4rem] px-[1rem]  border border-pink-500">
+            <div id="lista" class="text-[#0C0C0C] lg:w-[100%] lg:justify-center lg:self-center flex flex-col lg:flex-row lg:gap-[50rem] w-[100%] mb-[2rem] lg:mb-[4rem] px-[1rem] ">
 
                 <div id="left" class="text-[1.25rem] lg:text-[1.5rem] font-bold font-inter dark:text-white">
                     <p>
