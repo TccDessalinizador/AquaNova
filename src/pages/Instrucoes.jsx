@@ -20,7 +20,7 @@ export function Instrucoes() {
         <div>
             <Header />
 
-            <div id="pagina-it" class="bg-[#F7F7F7] dark:bg-[#0C0C0C] text-white px-[2.5rem] py-[2rem] pt-[6rem] lg:pt-[8rem] w-[100vw] lg:w-[100vw]">
+            <div id="pagina-it" class="bg-[#F7F7F7] dark:bg-[#0C0C0C] text-white px-[2.5rem] py-[2rem] pt-[6rem] lg:pt-[8rem] w-[100vw] lg:w-full">
                 <h1 className="text-[2rem] dark:text-white text-[#0C0C0C] font-bold flex justify-center w-[95vw] mb-[3rem]">Saiba como funciona</h1>
 
                 <div class="lg:flex lg:flex-row lg:gap-[5rem] lg:justify-between lg:text-[0.75rem]">
@@ -72,7 +72,7 @@ export function Instrucoes() {
                         </p>
                     </div>
 
-                    <div id="instrucao3" className='w-[20rem] lg:w-[30rem]'>
+                    <div id="instrucao3" className='w-[20rem] lg:w-[30rem] lg:mr-0'>
                         <div class="w-calc(100vw - 2.5rem) flex items-center flex-col gap-y-[.5rem] mt-[1rem]">
                             <img src={theme === "dark" ? tresLight : tres} className="w-[4rem] h-[6rem] " />
                             <img src={theme === "dark" ? instrucao3 : instrucao3Light} className="w-[10rem] h-[10rem] mb-[1rem] mt-[1rem]"/>
