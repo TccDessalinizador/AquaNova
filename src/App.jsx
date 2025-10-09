@@ -10,6 +10,7 @@ import { Instrucoes } from './pages/Instrucoes.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Componentes } from './pages/Componentes.jsx'
 import { Home } from './components/Home.jsx'
+import { Sistema } from './pages/Sistema.jsx'
 import { Link } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 
@@ -26,6 +27,7 @@ export function App() {
           <Route path='/quemsomos' element={<QuemSomos />}/>
           <Route path='/profile' element={<Profile />}/>
           <Route path='/referencias' element={<Referencias />}/>
+          <Route path='/sistema' element={<Sistema />}/>
 
           <Route path='/login' element={<Login />}/>
           <Route path='/cadastro' element={<Cadastro />}/>
