@@ -92,7 +92,7 @@ export function Home() {
 
                         </div>
                         <Link to={"/instrucoes"} className=" mt-[3rem] w-[18rem] h-[4rem] border border-black text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem]">Saiba mais</Link>
-                        <Link to={"/sistema"} className='self-center text-[1.5rem] hover:text-gray-500'>Clique aqui se você já possui o AquaNova </Link>
+                        <Link to={"/sistema"} className='self-center text-[1.5rem] hover:text-gray-500 dark:text-white'>Clique aqui se você já possui o AquaNova </Link>
                     </div>
                 </div>
 
