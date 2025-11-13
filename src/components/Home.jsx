@@ -1,3 +1,4 @@
+// Home.jsx (substitua seu arquivo atual por este ou aplique as modificações)
 import ciclo from '../assets/homeAssets/ciclo.svg'
 import cifrao from '../assets/homeAssets/cifrao.svg'
 import diamante from '../assets/homeAssets/diamante.svg'
@@ -24,6 +25,44 @@ import { CardHomeS } from './CardHomeS'
 import { QuemSomosComp } from './QuemSomosComp'
 import { CompComponentes } from './CompComponentes'
 
+
+// --------------------------
+// CONFIGURE AQUI O LINK DO VÍDEO
+const YOUTUBE_LINK = 'https://youtube.com/shorts/BKCd73my7Tw?si=JHbwhYUe66pJtbJO'
+// Se quiser forçar aspecto vertical (short), troque para '177.78%' (9:16). Padrão abaixo é 16:9.
+const VIDEO_ASPECT_PADDING = '56.25%' // 16:9 => 56.25% ; 9:16 => 177.78%
+// --------------------------
+
+function extractYouTubeId(url) {
+  // suporta youtu.be/ID , youtube.com/watch?v=ID , youtube.com/shorts/ID , youtube.com/embed/ID
+  const m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|watch\?v=|embed\/))([A-Za-z0-9_-]{11})/)
+  return m ? m[1] : null
+}
+
+function VideoEmbed({ url, aspectPadding = '56.25%', title = 'Vídeo AquaNova' }) {
+  const id = extractYouTubeId(url)
+  if (!id) return null
+
+  const embedSrc = `https://www.youtube.com/embed/${id}`
+
+  return (
+    <div className="w-full max-w-[45.8rem] mx-auto mb-[3rem]">
+      <div
+        className="relative rounded-[1rem] overflow-hidden shadow-md"
+        style={{ paddingTop: aspectPadding }}
+      >
+        <iframe
+          title={title}
+          src={embedSrc}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+        />
+      </div>
+    </div>
+  )
+}
 
 export function Home() {
     const { theme } = useContext(ThemeContext)
@@ -61,7 +100,6 @@ export function Home() {
                         text={"Aprenda a manter seu equipamento em operação 24/7, com monitoramento via Arduino e recarga solar inteligente."}
                     />
                 </div>
-
 
                 <div id="beneficios" className="dark:bg-[#0C0C0C] h-[71rem] mb-[0rem]">
                     <h2 className="text-[2rem] dark:text-white text-neutral-950/75 font bold flex flex-col justify-center items-center text-start mb-[3rem] lg:flex-row lg:text-[3rem] lg:gap-[.2rem]">Os benefícios de <div /> dominar o AquaNova</h2>

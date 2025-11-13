@@ -5,6 +5,43 @@ import emojiSmileDark from "../assets/emojiSmileDark.png"
 import { useContext, useState } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 
+// CONFIGURE AQUI O LINK DO VÍDEO
+const YOUTUBE_LINK = 'https://youtube.com/shorts/BKCd73my7Tw?si=JHbwhYUe66pJtbJO'
+// Se quiser forçar aspecto vertical (short), troque para '177.78%' (9:16). Padrão abaixo é 16:9.
+const VIDEO_ASPECT_PADDING = '56.25%' // 16:9 => 56.25% ; 9:16 => 177.78%
+// --------------------------
+
+function extractYouTubeId(url) {
+  // suporta youtu.be/ID , youtube.com/watch?v=ID , youtube.com/shorts/ID , youtube.com/embed/ID
+  const m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|watch\?v=|embed\/))([A-Za-z0-9_-]{11})/)
+  return m ? m[1] : null
+}
+
+function VideoEmbed({ url, aspectPadding = '56.25%', title = 'Vídeo AquaNova' }) {
+  const id = extractYouTubeId(url)
+  if (!id) return null
+
+  const embedSrc = `https://www.youtube.com/embed/${id}`
+
+  return (
+    <div className="w-full max-w-[45.8rem] mx-auto mb-[3rem]">
+      <div
+        className="relative rounded-[1rem] overflow-hidden shadow-md"
+        style={{ paddingTop: aspectPadding }}
+      >
+        <iframe
+          title={title}
+          src={embedSrc}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+        />
+      </div>
+    </div>
+  )
+}
+
 export function CompComponentes() {
     const { theme } = useContext(ThemeContext)
     return (
@@ -19,7 +56,15 @@ export function CompComponentes() {
                 <h2 class="text-[1.5rem] pl-[.8rem] lg:text-[2rem] font-inter font-bold dark:text-white ml-[2.8rem] lg:ml-0">e quanto será seu investimento</h2>
             </div>
 
-            <div id='video' class="w-[20rem] h-[14rem] lg:w-[50rem] lg:h-[30rem] bg-[#C4C4C4] text-black flex items-center justify-center mb-[2rem] lg:mb-[4rem]"><p>video</p></div>
+            
+            
+                           
+                           
+            {/* ===== VÍDEO INSERIDO AQUI (espaço reservado) ===== */}
+            <VideoEmbed url={YOUTUBE_LINK} aspectPadding={VIDEO_ASPECT_PADDING} title="AquaNova - Demonstração" />
+            {/* ================================================= */}
+
+            {/* <div id='video' class="w-[20rem] h-[14rem] lg:w-[50rem] lg:h-[30rem] bg-[#C4C4C4] text-black flex items-center justify-center mb-[2rem] lg:mb-[4rem]"><p>video</p></div> */}
 
             <h2 class="text-[2rem] text-[#0C0C0C] font-inter font-bold flex self-center justify-center mb-[1.75rem] dark:text-white">Lista de Itens</h2>
 
