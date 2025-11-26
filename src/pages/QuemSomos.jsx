@@ -3,17 +3,42 @@ import fotoMenocci from '../assets/fotoMenocci.jpeg'
 import fotoBrandassi from '../assets/fotoBrandassi.jpeg'
 import modelo from '../assets/Ellipse 7.jpg'
 import { QuemSomosComp } from '../components/QuemSomosComp.jsx'
-import { Link } from 'react-router-dom'
 
 export function QuemSomos() {
     return (
         <div>
             <Header />
 
-            <div id="pagina" className="h-[160vh] lg:h-[100vh] bg-white dark:bg-[#0C0C0C] lg:w-[100vw]">
-                <h1 class="flex justify-center pt-[8rem] mb-[2rem] text-[2rem] dark:text-white font-bold text-shadow-lg/30">Quem somos?</h1>
+            <div 
+                id="pagina"
+                className="
+                    w-full
+                    min-h-screen
+                    pt-[6rem]
+                    pb-[4rem]
+                    bg-[#0A1A2F]      /* azul */
+                    dark:bg-[#0A1A2F] /* força o azul no dark mode */
+                    text-white
+                "
+            >
+                {/* TÍTULO */}
+                <h1 className="text-center text-[2.4rem] font-bold drop-shadow-xl mb-[3rem]">
+                    Quem somos?
+                </h1>
 
-                <div id="fotos" class="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
+                {/* GRID DE INTEGRANTES */}
+                <div 
+                    id="fotos"
+                    className="
+                        grid 
+                        grid-cols-1 
+                        sm:grid-cols-2 
+                        lg:grid-cols-4
+                        gap-[2.5rem]
+                        px-[2rem]
+                        lg:px-[6rem]
+                    "
+                >
                     <QuemSomosComp
                         img={fotoMenocci}
                         tittle={"Arthur Menocci"}
@@ -33,7 +58,6 @@ export function QuemSomos() {
                         img={fotoBrandassi}
                         tittle={"Gustavo Brandassi"}
                     />
-
                 </div>
             </div>
         </div>

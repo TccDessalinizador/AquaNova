@@ -1,4 +1,13 @@
-// Home.jsx (substitua seu arquivo atual por este ou aplique as modificações)
+// Home.jsx — versão organizada, minimalista premium (botões centralizados e textos mais claros)
+import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { ThemeContext } from '../context/ThemeContext'
+import { Header } from './Header'
+import CardHome from './CardHomeF'
+import { CardHomeS } from './CardHomeS'
+import { QuemSomosComp } from './QuemSomosComp'
+import { CompComponentes } from './CompComponentes'
+
 import ciclo from '../assets/homeAssets/ciclo.svg'
 import cifrao from '../assets/homeAssets/cifrao.svg'
 import diamante from '../assets/homeAssets/diamante.svg'
@@ -10,192 +19,234 @@ import fotoBrandassi from '../assets/fotoBrandassi.jpeg'
 import modelo from '../assets/Ellipse 7.jpg'
 import fotoJogo from '../assets/jogoFoto.png'
 import robo from '../assets/robo.png'
+
+// versões dark
 import circuloDark from '../assets/homeAssets/circuloDark.png'
 import interrogacaoDark from '../assets/homeAssets/interrogacaoDark.png'
 import smileDark from '../assets/homeAssets/smileDark.png'
 import cifraoDark from "../assets/homeAssets/cifraoDark.png"
 import diamanteDark from "../assets/homeAssets/diamanteDark.png"
 import likeDark from "../assets/homeAssets/likeDark.png"
-import { Header } from './Header'
-import { Link } from 'react-router-dom'
-import { useContext, useState } from 'react'
-import { ThemeContext } from '../context/ThemeContext'
-import { CardHome } from './CardHomeF'
-import { CardHomeS } from './CardHomeS'
-import { QuemSomosComp } from './QuemSomosComp'
-import { CompComponentes } from './CompComponentes'
-
-
-// --------------------------
-// CONFIGURE AQUI O LINK DO VÍDEO
-const YOUTUBE_LINK = 'https://youtube.com/shorts/BKCd73my7Tw?si=JHbwhYUe66pJtbJO'
-// Se quiser forçar aspecto vertical (short), troque para '177.78%' (9:16). Padrão abaixo é 16:9.
-const VIDEO_ASPECT_PADDING = '56.25%' // 16:9 => 56.25% ; 9:16 => 177.78%
-// --------------------------
-
-function extractYouTubeId(url) {
-  // suporta youtu.be/ID , youtube.com/watch?v=ID , youtube.com/shorts/ID , youtube.com/embed/ID
-  const m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|watch\?v=|embed\/))([A-Za-z0-9_-]{11})/)
-  return m ? m[1] : null
-}
-
-function VideoEmbed({ url, aspectPadding = '56.25%', title = 'Vídeo AquaNova' }) {
-  const id = extractYouTubeId(url)
-  if (!id) return null
-
-  const embedSrc = `https://www.youtube.com/embed/${id}`
-
-  return (
-    <div className="w-full max-w-[45.8rem] mx-auto mb-[3rem]">
-      <div
-        className="relative rounded-[1rem] overflow-hidden shadow-md"
-        style={{ paddingTop: aspectPadding }}
-      >
-        <iframe
-          title={title}
-          src={embedSrc}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-        />
-      </div>
-    </div>
-  )
-}
 
 export function Home() {
-    const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext)
 
-    return (
-        <div>
-            <Header />
+  return (
+    <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+      <Header />
 
-            <div id="pg1" className="dark:bg-[#0C0C0C] lg:pt-[8rem] pt-[7rem]">
-                <h1 className="text-[2.25rem] text-[#0C0C0C] font-bold text-shadow-mb mt-[rem] flex flex-col justify-center text-center mb-[.5rem] lg:text-[4.5rem] dark:text-white dark:text-shadow-none">Sol que dessalina <br /> <p className=" dark:text-white dark:text-shadow-none text-[2rem] text-[#0C0C0C] font-bold text-shadow-mb lg:text-[4.5rem]">Futuro que se ilumina</p></h1>
-                <p className="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[2rem] lg:w-[60rem] lg:justify-center">Tecnologia limpa e 100% autônoma que garante água potável às comunidades do nordeste.</p>
+      <main className="pt-28 lg:pt-36 space-y-24">
 
-                <div id="separacao" className="flex mx-auto w-[20rem] lg:w-[24.5rem] h-[0.18rem] bg-[#000000] mb-[7rem] dark:bg-white"></div>
+        {/* ========================== HERO ========================== */}
+        <section className="container mx-auto px-6 lg:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-                <p className="text-[2rem] text-[#0C0C0C] font bold flex justify-center mb-[.5rem] lg:text-[3rem] dark:text-white">Saiba como funciona</p>
-                <p className="text-[1.25rem] text-[#A3A3A3] font-bold flex mx-auto items-center w-[20rem] h-[7rem] text-center mb-[5.5rem] lg:w-[60rem] lg:justify-center">Veja como o AquaNova purifica água salobra com energia solar — e como aplicar isso no semiárido.</p>
+            {/* LEFT TEXT */}
+            <div className="space-y-6 max-w-xl mx-auto lg:mx-0">
+              <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
+                Sol que dessalina
+                <br />
+                <span className="text-indigo-600 dark:text-indigo-400">
+                  Futuro que se ilumina
+                </span>
+              </h1>
 
-                <div id="grid" className="mb-[10rem] lg:flex">
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Tecnologia limpa, autônoma e pensada para comunidades do semiárido.
+                Projeto otimizado para energia solar, manutenção simples e operação contínua.
+              </p>
 
-                    <CardHome
-                        img={theme === "dark" ? interrogacaoDark : interrogacao}
-                        title={"Entenda o Processo"}
-                        text={"Conheça cada etapa do ciclo de dessalinização: captação, evaporação, condensação e entrega da água limpa."}
-                    />
-
-                    <CardHome
-                        img={theme === "dark" ? smileDark : emoji}
-                        title={"Supere Desafios Locais"}
-                        text={"Saiba como contornar a salinidade elevada e a falta de infraestrutura com um sistema autônomo e de fácil manutenção."}
-                    />
-
-                    <CardHome
-                        img={theme === "dark" ? circuloDark : ciclo}
-                        title={"Garanta Funcionamento Continuo"}
-                        text={"Aprenda a manter seu equipamento em operação 24/7, com monitoramento via Arduino e recarga solar inteligente."}
-                    />
+              {/* HIGHLIGHTS HORIZONTAL (compacto e alinhado) */}
+              <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="rounded-lg p-3 text-center bg-white/60 dark:bg-white/6 shadow-sm">
+                  <div className="text-indigo-600 dark:text-indigo-400 font-semibold">Monitoramento</div>
+                  <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Leitura em tempo real</div>
                 </div>
-
-                <div id="beneficios" className="dark:bg-[#0C0C0C] h-[71rem] mb-[0rem]">
-                    <h2 className="text-[2rem] dark:text-white text-neutral-950/75 font bold flex flex-col justify-center items-center text-start mb-[3rem] lg:flex-row lg:text-[3rem] lg:gap-[.2rem]">Os benefícios de <div /> dominar o AquaNova</h2>
-
-                    <p className="text-[1.2rem] font-light dark:text-shadow-mb text-black w-[15rem] mx-auto mb-[3.5rem] lg:w-[100%] lg:text-[1.5rem] flex lg:items-center lg:justify-center dark:text-white">Ao aplicar nosso método completo, você vai conquistar:</p>
-
-                    <div id="grid-beneficios" className="lg:flex lg:flex-col lg:gap-[5rem] lg:px-[12rem]">
-                        <div id="grid-beneficios" className="lg:flex lg:flex-row lg:justify-center lg:self-center lg:gap-[5rem]">
-
-                            <CardHomeS
-                                img={theme === "dark" ? like : likeDark}
-                                tittle={"Fácil de Usar"}
-                                text={"Interface intuitiva e sistema automatizado: qualquer pessoa pode operar com o mínimo de instruções"}
-                            />
-
-
-                            <CardHomeS
-                                img={theme === "dark" ? diamante : diamanteDark}
-                                tittle={"Tecnologia Valiosa"}
-                                text={"Um sistema moderno, confiável e sustentável, feito para durar mesmo nas condições mais desafiadoras."}
-                            />
-
-                            <CardHomeS
-                                img={theme === "dark" ? cifrao : cifraoDark}
-                                tittle={"Economia Garantida"}
-                                text={"Redução de custos com transporte de água e energia, trazendo retorno a longo prazo para comunidades."}
-                            />
-
-                        </div>
-                        <Link to={"/instrucoes"} className=" mt-[3rem] w-[18rem] h-[4rem] border border-black text-[#0C0C0C] text-[1.25rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem]">Saiba mais</Link>
-                        <Link to={"/sistema"} className='self-center text-[1.5rem] hover:text-gray-500 dark:text-white'>Clique aqui se você já possui o AquaNova </Link>
-                    </div>
+                <div className="rounded-lg p-3 text-center bg-white/60 dark:bg-white/6 shadow-sm">
+                  <div className="text-indigo-600 dark:text-indigo-400 font-semibold">Energia Solar</div>
+                  <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Autonomia off-grid</div>
                 </div>
-
-                <div id="quemsomos" className="lg:w-[90vw] lg:mx-auto dark:bg-[#0C0C0C] lg:mt-[-25rem] mb-[35rem] lg:mb-[10rem]">
-                    <h1 className="flex justify-center mb-[2rem] lg:mt-[8rem] text-[2.5rem] dark:text-white text-[#010000] font-bold text-shadow-lg/30">Quem somos?</h1>
-
-                    <div id="fotos" className="flex flex-col items-center h-[74vh] lg:flex-row lg:px-[8rem] lg:gap-[2rem] lg:justify-between">
-                        <QuemSomosComp
-                            img={fotoMenocci}
-                            tittle={"Arthur Menocci"}
-                        />
-
-                        <QuemSomosComp
-                            img={modelo}
-                            tittle={"Eduardo Mariano"}
-                        />
-
-                        <QuemSomosComp
-                            img={modelo}
-                            tittle={"Guilherme Milbeyer"}
-                        />
-
-                        <QuemSomosComp
-                            img={fotoBrandassi}
-                            tittle={"Gustavo Brandassi"}
-                        />
-
-                    </div>
+                <div className="rounded-lg p-3 text-center bg-white/60 dark:bg-white/6 shadow-sm">
+                  <div className="text-indigo-600 dark:text-indigo-400 font-semibold">Baixo Custo</div>
+                  <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Fácil manutenção</div>
                 </div>
-           
-                <CompComponentes />
-
-                <div id="jogo" className="w-[100%] h-[100vh] dark:bg-dark-fade mb-[15rem] lg:mb-[1rem]">
-                        <h1 className="ml-[1rem] lg:ml-0 text-[2.5rem] mt-[2.5rem] mb-[2rem] flex justify-center text-[1.5rem] text-black font-bold text-shadow-[0 4px 4px rgba(0, 0, 0, 0.75)] dark:text-white">Conheça nosso jogo</h1>
-
-                        <div id="img" className="flex justify-center w-[100%] mb-[3rem] rounded-[100%]">
-                            <img src={fotoJogo} alt="" className="flex w-[22rem] lg:w-[45.8rem] lg:h-[25.5rem] self-center rounded-[3.5rem]" />
-                        </div>
-
-                        <p className="w-[22rem] lg:w-[45.8rem] mx-auto px-[1.15rem] font-normal text-[1.25rem] text-[#0C0C0C] mb-[1.5rem] text-shadow-2xs dark:text-white">O cientista Dr. Elias criou um dessalinizador movido a energia solar, capaz de mudar o mundo. Mas sua invenção passou a ser alvo de grupos que querem usá-la para fins próprios. Agora, ele e seus ajudantes precisam proteger essa tecnologia a todo custo. Enfrente desafios, proteja o projeto e ajude a salvar o futuro da água no planeta.
-
-                            <br />Será você capaz de proteger o futuro da humanidade?</p>
-
-                        <div className="flex items-center justify-center self-center w-[100%]">
-                            <Link to={'/jogo'} className="w-[18rem] h-[4rem] bg-white border-1 border-[rgba(90, 90, 90, 0.50)] rounded-[0.75rem] text-[1rem] text-[#0C0C0C] font-bold flex items-center justify-center cursor-pointer">Saiba mais</Link>
-                        </div>
-                </div>
-
-                <div id="referencias" className="bg-white dark:bg-[#0C0C0C] flex flex-col text-white h-[94vh] mt-[-18rem] lg:mt-[2rem] lg:w-[80rem] lg:h-[40rem] lg:mx-auto lg:mb-[0rem] h-[130vh]">
-                        <h1 class="mt-[3rem] text-[2rem] font-inter font-bold flex justify-center text-black dark:text-white mb-[5rem] lg:mb-[8rem]">Referências</h1>
-
-                        <div class="lg:flex lg:flex-row">
-                            <div class="flex justify-center self-center lg:h-[15rem] lg:w-[80rem] lg:ml-[5rem] flex justify-center items-center text-[1.5rem] px-[1rem] text-black dark:text-white">
-                                <p>Saiba quais foram as principais fontes que embasaram nossos estudos, pesquisas e desenvolvimento do projeto AquaNova. Acreditamos na ciência, na tecnologia acessível e em soluções sustentáveis — por isso, cada dado, componente e ideia utilizada tem base em materiais confiáveis e atualizados. Confira abaixo as referências que ajudaram a tornar este projeto possível.</p>
-                            </div>
-
-                            <div class="w-[100%] flex justify-center self-center mt-[1rem]">
-                                <img src={robo} alt="" class="w-[12rem] h-[12rem]" />
-                            </div>
-
-                        </div>
-                        <Link to={"/referencias"} class=" mt-[-.5rem] w-[18rem] h-[4rem] text-[#0C0C0C] text-[1rem] font-bold flex mx-auto justify-center items-center bg-white rounded-[0.75rem] box-shadow-mb cursor-pointer lg:mt-[0rem] lg:mt-[4rem] border border-black">Saiba mais</Link>
-
-                </div>
+              </div>
             </div>
-        </div>    
-    )
+
+            {/* RIGHT IMAGE */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-full max-w-md rounded-2xl shadow-xl overflow-hidden">
+                <img src={robo} alt="AquaNova" className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+
+          {/* CTA PRINCIPAL - CENTRALIZADO (aparece abaixo do hero, sempre central) */}
+          <div className="mt-8 flex justify-center gap-4">
+            <Link
+              to="/instrucoes"
+              className="px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold shadow-lg hover:shadow-xl transition"
+              aria-label="Saiba como funciona o AquaNova"
+            >
+              Saiba como funciona
+            </Link>
+
+            <Link
+              to="/sistema"
+              className="px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+              aria-label="Já possui o AquaNova"
+            >
+              Já possui o AquaNova?
+            </Link>
+          </div>
+        </section>
+
+        {/* ========================== CARDS EXPLICATIVOS ========================== */}
+        <section>
+          <div className="container mx-auto px-6 lg:px-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
+
+              <CardHome
+                img={theme === "dark" ? interrogacaoDark : interrogacao}
+                title="Entenda o Processo"
+                text="Cada etapa: captação, evaporação, condensação e entrega — explicada de forma prática."
+              />
+
+              <CardHome
+                img={theme === "dark" ? smileDark : emoji}
+                title="Supere Desafios Locais"
+                text="Soluções simples para salinidade elevada e infraestrutura limitada."
+              />
+
+              <CardHome
+                img={theme === "dark" ? circuloDark : ciclo}
+                title="Garantia de Operação"
+                text="Monitoramento inteligente e recarga solar para funcionamento 24/7."
+              />
+
+            </div>
+          </div>
+        </section>
+
+        {/* ========================== BENEFÍCIOS ========================== */}
+        <section>
+          <div className="container mx-auto px-6 lg:px-10 text-center">
+            <h2 className="text-3xl font-bold mb-4">Benefícios de dominar o AquaNova</h2>
+
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
+              Autonomia hídrica, redução de custos e tecnologia escalável — pensado para quem precisa de solução confiável.
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+              <CardHomeS
+                img={theme === "light" ? likeDark : like}
+                tittle="Fácil de Usar"
+                text="Interface clara e automação que reduz erros operacionais."
+              />
+
+              <CardHomeS
+                img={theme === "light" ? diamanteDark : diamante}
+                tittle="Tecnologia Valiosa"
+                text="Projeto robusto, resistente e preparado para o campo."
+              />
+
+              <CardHomeS
+                img={theme === "light" ? cifraoDark : cifrao}
+                tittle="Economia Garantida"
+                text="Menos custos com transporte e energia — retorno no médio prazo."
+              />
+            </div>
+
+            {/* CTA SECUNDÁRIO - CENTRALIZADO */}
+            <div className="flex justify-center gap-4">
+              <Link
+                to="/instrucoes"
+                className="px-6 py-3 rounded-lg bg-white border border-gray-200 text-gray-900 shadow hover:shadow-lg transition"
+                aria-label="Saiba mais sobre instruções"
+              >
+                Saiba mais
+              </Link>
+
+              <Link
+                to="/sistema"
+                className="px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold shadow hover:shadow-lg transition"
+                aria-label="Link para sistema"
+              >
+                Já possui o AquaNova?
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ========================== QUEM SOMOS ========================== */}
+        <section>
+          <div className="container mx-auto px-6 lg:px-10">
+            <h2 className="text-3xl font-bold mb-8 text-center">Quem somos</h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
+              <QuemSomosComp img={fotoMenocci} tittle="Arthur Menocci" />
+              <QuemSomosComp img={modelo} tittle="Eduardo Mariano" />
+              <QuemSomosComp img={modelo} tittle="Guilherme Milbeyer" />
+              <QuemSomosComp img={fotoBrandassi} tittle="Gustavo Brandassi" />
+            </div>
+          </div>
+        </section>
+
+        {/* ========================== JOGO ========================== */}
+        <section>
+          <div className="container mx-auto px-6 lg:px-10 text-center">
+            <h2 className="text-3xl font-bold mb-6">Conheça nosso jogo</h2>
+
+            <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+              Acompanhe a história do Dr. Elias e proteja a tecnologia que pode mudar o futuro.
+            </p>
+
+            <img
+              src={fotoJogo}
+              alt="Imagem do jogo"
+              className="w-full max-w-4xl mx-auto rounded-2xl shadow-xl mb-6"
+            />
+
+            <div className="flex justify-center">
+              <Link
+                to="/jogo"
+                className="px-8 py-3 rounded-lg bg-indigo-600 text-white font-semibold shadow hover:shadow-lg transition"
+                aria-label="Saiba mais sobre o jogo"
+              >
+                Saiba mais
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ========================== REFERÊNCIAS ========================== */}
+        <section className="pb-24">
+          <div className="container mx-auto px-6 lg:px-10">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 lg:p-10 shadow-lg">
+              <div className="flex flex-col lg:flex-row items-center gap-8">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold mb-3">Referências</h3>
+                  <p className="text-gray-600 dark:text-gray-300 max-w-xl">
+                    Fontes que embasaram os estudos, pesquisas e o desenvolvimento do AquaNova.
+                  </p>
+
+                  <div className="mt-6">
+                    <Link
+                      to="/referencias"
+                      className="inline-block px-5 py-2 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-100 hover:bg-indigo-100 transition"
+                    >
+                      Ver referências
+                    </Link>
+                  </div>
+                </div>
+
+                <img src={robo} alt="Robô" className="w-36 mx-auto lg:mx-0" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  )
 }

@@ -2,102 +2,129 @@ import sublinhado from '../assets/sublinhado.svg'
 import sublinhadoDark from "../assets/homeAssets/sublinhadoDark.png"
 import smile from '../assets/smile.svg'
 import emojiSmileDark from "../assets/emojiSmileDark.png"
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 
-// CONFIGURE AQUI O LINK DO VÍDEO
-const YOUTUBE_LINK = 'https://youtube.com/shorts/BKCd73my7Tw?si=JHbwhYUe66pJtbJO'
-// Se quiser forçar aspecto vertical (short), troque para '177.78%' (9:16). Padrão abaixo é 16:9.
-const VIDEO_ASPECT_PADDING = '56.25%' // 16:9 => 56.25% ; 9:16 => 177.78%
-// --------------------------
-
-function extractYouTubeId(url) {
-  // suporta youtu.be/ID , youtube.com/watch?v=ID , youtube.com/shorts/ID , youtube.com/embed/ID
-  const m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|watch\?v=|embed\/))([A-Za-z0-9_-]{11})/)
-  return m ? m[1] : null
-}
-
-function VideoEmbed({ url, aspectPadding = '56.25%', title = 'Vídeo AquaNova' }) {
-  const id = extractYouTubeId(url)
-  if (!id) return null
-
-  const embedSrc = `https://www.youtube.com/embed/${id}`
+export function CompComponentes() {
+  const { theme } = useContext(ThemeContext)
 
   return (
-    <div className="w-full max-w-[45.8rem] mx-auto mb-[3rem]">
-      <div
-        className="relative rounded-[1rem] overflow-hidden shadow-md"
-        style={{ paddingTop: aspectPadding }}
-      >
-        <iframe
-          title={title}
-          src={embedSrc}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-        />
-      </div>
-    </div>
-  )
-}
+    <section
+      id="componentes"
+      className="
+        bg-[#FAFAFA] dark:bg-[#0C0C0C]
+        text-[#0C0C0C] dark:text-[#F5F5F5]
+        w-screen lg:w-[95vw] mx-auto
+        px-6 pt-28 pb-32
+        flex flex-col items-center
+        transition-colors duration-700
+      "
+    >
+      {/* TITULO */}
+      <header className="w-full max-w-4xl text-center mb-20">
+        <div className="flex flex-col items-center gap-4">
+          
+          <h1 className="
+            flex items-center gap-4
+            text-4xl lg:text-6xl
+            font-light font-inter tracking-tight
+            text-indigo-600 dark:text-indigo-400
+          ">
+            Componentes e Investimentos
+            <img
+              src={theme === 'dark' ? smile : emojiSmileDark}
+              className="w-9 h-9 lg:w-11 lg:h-11 opacity-90"
+              alt=""
+            />
+          </h1>
 
-export function CompComponentes() {
-    const { theme } = useContext(ThemeContext)
-    return (
-        <div id="componentes" className="bg-white text-white flex flex-col items-center px-[1.5rem] mt-[3rem] dark:bg-[#0C0C0C] w-[100vw] lg:w-[95vw] lg:mx-auto">
-            <div id="top" class="mb-[2rem] flex flex-col justify-end text-[#0C0C0C] lg:w-[100%] w-[22rem] mr-[3rem] lg:mr-[0]">
-                <h1 class="w-[90%] flex flex-row text-[1.2rem] justify-center self-end lg:self-center items-center lg:text-[2.5rem] font-inter font-bold gap-[.2rem] dark:text-white">Componentes e investimentos <img src={theme === "dark" ? smile : emojiSmileDark} alt="" className="lg:w-[2rem] lg:h-[1.7rem] lg:mt-[1rem] w-[1.5rem] h-[1.5rem]" /></h1>
-                <img src={theme === "dark" ? sublinhado : sublinhadoDark} alt="" class="flex self-center lg:ml-[25rem] ml-[10rem]" />
-            </div>
+          <img
+            src={theme === 'dark' ? sublinhado : sublinhadoDark}
+            className="w-48 lg:w-72 opacity-70"
+            alt=""
+          />
 
-            <div class="flex flex-col items-center mb-[3rem] text-[#0C0C0C]">
-                <h2 class="text-[1.5rem] lg:text-[2rem] font-inter font-bold dark:text-white">Saiba onde comprar </h2>
-                <h2 class="text-[1.5rem] pl-[.8rem] lg:text-[2rem] font-inter font-bold dark:text-white ml-[2.8rem] lg:ml-0">e quanto será seu investimento</h2>
-            </div>
-
-            
-            
-                           
-                           
-            {/* ===== VÍDEO INSERIDO AQUI (espaço reservado) ===== */}
-            <VideoEmbed url={YOUTUBE_LINK} aspectPadding={VIDEO_ASPECT_PADDING} title="AquaNova - Demonstração" />
-            {/* ================================================= */}
-
-            {/* <div id='video' class="w-[20rem] h-[14rem] lg:w-[50rem] lg:h-[30rem] bg-[#C4C4C4] text-black flex items-center justify-center mb-[2rem] lg:mb-[4rem]"><p>video</p></div> */}
-
-            <h2 class="text-[2rem] text-[#0C0C0C] font-inter font-bold flex self-center justify-center mb-[1.75rem] dark:text-white">Lista de Itens</h2>
-
-            <div id="lista" class="text-[#0C0C0C] lg:w-[100%] lg:justify-center lg:self-center flex flex-col lg:flex-row lg:gap-[50rem] w-[100%] mb-[2rem] lg:mb-[4rem] px-[1rem] ">
-
-                <div id="left" class="text-[1.25rem] lg:text-[1.5rem] font-bold font-inter dark:text-white">
-                    <p>
-                        Sensor de Condutividade/TDS <br />
-                        Sensor de Nível Ultrassônico <br />
-                        Sensor de Pressão de Água  <br />
-                        Sensor de Fluxo de Água <br />
-                        Válvulas Solenoides 12V <br />
-                        Relés de Estado Sólido <br />
-                        Módulo Bluetooth <br />
-                        MOSFET IRF520 <br />
-                        Display LCD <br />
-                    </p>
-                </div>
-
-                <div id="right" class="text-[1.25rem] lg:text-[1.5rem] font-bold font-inter lg:text-right dark:text-white">
-                    <p>
-                        4 LDRs <br />
-                        Ponte H  <br />
-                        Bateria de Lítio  <br />
-                        Mini Painel Solar  <br />
-                        Módulo Step-down  <br />
-                        Controlador de Carga  <br />
-                        2 Servomotores MG995  <br />
-                        Carcaça para Membrana de 50 GPD  <br />
-                    </p>
-                </div>
-            </div>
-
+          {/* DIVISOR PREMIUM */}
+          <div
+            className="
+              w-20 h-[2px] mt-4
+              bg-indigo-600/20 dark:bg-indigo-400/40
+              rounded-full
+            "
+          />
         </div>
-    )
+      </header>
+
+      {/* Subtítulo */}
+      <div className="text-center mb-16">
+        <h2 className="
+          text-2xl lg:text-3xl
+          font-inter font-light
+          leading-tight
+          text-indigo-600/80 dark:text-indigo-400/80
+        ">
+          Saiba onde comprar
+        </h2>
+
+        <h2 className="
+          text-2xl lg:text-3xl
+          font-inter font-light
+          leading-tight mt-1
+          text-indigo-600/80 dark:text-indigo-400/80
+        ">
+          e quanto será seu investimento
+        </h2>
+      </div>
+
+      {/* Título lista */}
+      <h2 className="
+        text-3xl lg:text-4xl
+        font-inter font-semibold mb-12
+        text-center tracking-tight
+        text-indigo-600 dark:text-indigo-400
+      ">
+        Lista de Itens
+      </h2>
+
+      {/* LISTA PREMIUM */}
+      <div
+        className="
+          w-full max-w-5xl
+          flex flex-col lg:flex-row
+          justify-between
+          gap-14 lg:gap-36
+          font-inter text-[1.15rem] lg:text-[1.3rem]
+          font-light
+          text-[#0C0C0C]/90 dark:text-[#F5F5F5]/80
+        "
+      >
+        <div className="leading-10">
+          <p>
+            Sensor de Condutividade/TDS <br />
+            Sensor de Nível Ultrassônico <br />
+            Sensor de Pressão de Água <br />
+            Sensor de Fluxo de Água <br />
+            Válvulas Solenoides 12V <br />
+            Relés de Estado Sólido <br />
+            Módulo Bluetooth <br />
+            MOSFET IRF520 <br />
+            Display LCD <br />
+          </p>
+        </div>
+
+        <div className="leading-10 lg:text-right">
+          <p>
+            4 LDRs <br />
+            Ponte H <br />
+            Bateria de Lítio <br />
+            Mini Painel Solar <br />
+            Módulo Step-down <br />
+            Controlador de Carga <br />
+            2 Servomotores MG995 <br />
+            Carcaça para Membrana 50 GPD <br />
+          </p>
+        </div>
+      </div>
+    </section>
+  )
 }
