@@ -20,6 +20,43 @@ import { ThemeContext } from '../context/ThemeContext'
 export function Instrucoes() {
     const { theme } = useContext(ThemeContext)
 
+    const cards = [
+        {
+            icon: theme === "dark" ? umLight : um,
+            img: theme === "dark" ? instrucao1 : instrucao1Light,
+            title: "Preparos para ligar",
+            text: [
+                "Instale o AquaNova em uma área externa com boa incidência solar.",
+                "Posicione o painel solar voltado para o sol.",
+                "Conecte a entrada de água salobra ao sistema.",
+                "Garanta que o filtro esteja corretamente encaixado.",
+                "O sistema liga automaticamente com energia solar suficiente.",
+                "A bomba e sensores entram em operação."
+            ]
+        },
+        {
+            icon: theme === "dark" ? doisLight : dois,
+            img: theme === "dark" ? instrucao2 : instrucao2Light,
+            title: "Verifique as conexões",
+            text: [
+                "A água salobra é direcionada para o aquecedor.",
+                "O Arduino controla bomba, tempo e válvulas.",
+                "O vapor passa pelo condensador para resfriamento.",
+                "A água potável é armazenada no reservatório final."
+            ]
+        },
+        {
+            icon: theme === "dark" ? tresLight : tres,
+            img: theme === "dark" ? instrucao3 : instrucao3Light,
+            title: "Monitoramento",
+            text: [
+                "Dados via Bluetooth (nível, TDS, pressão e temperatura).",
+                "Use apps como Serial Bluetooth Terminal.",
+                "Desligamento automático ao encher o reservatório ou falta de energia."
+            ]
+        }
+    ];
+
     return (
         <div>
             <Header />
@@ -34,42 +71,8 @@ export function Instrucoes() {
 
                 {/* 3 CARDS */}
                 <div className="grid lg:grid-cols-3 gap-[4rem] justify-items-center">
-
-                    {/* CARD MODELO */}
-                    {[{
-                        icon: theme === "dark" ? umLight : um,
-                        img: theme === "dark" ? instrucao1 : instrucao1Light,
-                        title: "Preparos para ligar",
-                        text: [
-                            "Instale o AquaNova em uma área externa com boa incidência solar.",
-                            "Posicione o painel solar voltado para o sol.",
-                            "Conecte a entrada de água salobra ao sistema.",
-                            "Garanta que o filtro esteja corretamente encaixado.",
-                            "O sistema liga automaticamente com energia solar suficiente.",
-                            "A bomba e sensores entram em operação."
-                        ]
-                    }, {
-                        icon: theme === "dark" ? doisLight : dois,
-                        img: theme === "dark" ? instrucao2 : instrucao2Light,
-                        title: "Verifique as conexões",
-                        text: [
-                            "A água salobra é direcionada para o aquecedor.",
-                            "O Arduino controla bomba, tempo e válvulas.",
-                            "O vapor passa pelo condensador para resfriamento.",
-                            "A água potável é armazenada no reservatório final."
-                        ]
-                    }, {
-                        icon: theme === "dark" ? tresLight : tres,
-                        img: theme === "dark" ? instrucao3 : instrucao3Light,
-                        title: "Monitoramento",
-                        text: [
-                            "Dados via Bluetooth (nível, TDS, pressão e temperatura).",
-                            "Use apps como Serial Bluetooth Terminal.",
-                            "Desligamento automático ao encher o reservatório ou falta de energia."
-                        ]
-                    }].map((card, i) => (
+                    {cards.map((card, i) => (
                         <div key={i} className="w-[20rem] lg:w-[25rem] text-center p-[1rem]">
-
                             <img src={card.icon} className="w-[4rem] h-[6rem] mx-auto" />
                             <img src={card.img} className="w-[12rem] h-[12rem] mx-auto my-[1.5rem]" />
 
@@ -86,7 +89,6 @@ export function Instrucoes() {
                             </ul>
                         </div>
                     ))}
-
                 </div>
 
                 {/* VÍDEO */}
@@ -95,18 +97,15 @@ export function Instrucoes() {
                 </h2>
 
                 <div className="flex justify-center">
-                    <div className="w-[22rem] h-[13rem] lg:w-[70rem] lg:h-[40rem] bg-[#0A1128] dark:bg-white rounded-2xl overflow-hidden shadow-2xl transition-all">
-
-                        {/* COLE O LINK DO YOUTUBE AQUI */}
+                    <div className="w-[22rem] h-[13rem] lg:w-[70rem] lg:h-[40rem] bg-white dark:bg-[#0A1128] rounded-2xl overflow-hidden shadow-2xl transition-all">
                         <iframe
                             className="w-full h-full"
-                            src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+                            src="https://www.youtube.com/embed/BKCd73my7Tw"
                             title="Demonstração do Sistema"
                             allowFullScreen
                         ></iframe>
                     </div>
                 </div>
-
             </div>
         </div>
     )

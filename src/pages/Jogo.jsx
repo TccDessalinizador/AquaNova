@@ -4,7 +4,7 @@ import { Header } from '../components/Header.jsx'
 
 export function Jogo() {
     return (
-        <div>
+        <div className="bg-white dark:bg-[#0A1A2F] text-[#0A1A2F] dark:text-white min-h-screen">
             <Header />
 
             <div 
@@ -13,9 +13,6 @@ export function Jogo() {
                     w-full 
                     min-h-screen 
                     pt-[3rem] pb-[4rem]
-                    bg-[#0A1A2F]
-                    dark:bg-[#0A1A2F]
-                    text-white
                 "
             >
                 {/* TÍTULO */}
@@ -33,7 +30,7 @@ export function Jogo() {
                 </div>
 
                 {/* TEXTO */}
-                <p className="px-[1.5rem] lg:w-[70vw] lg:mx-auto leading-relaxed text-[1.1rem] text-[#E8E8E8] font-medium">
+                <p className="px-[1.5rem] lg:w-[70vw] lg:mx-auto leading-relaxed text-[1.1rem] font-medium">
                     Em um futuro próximo, o mundo enfrenta uma crise hídrica sem precedentes. Em meio ao caos, o brilhante cientista Dr. Elias cria uma máquina revolucionária capaz de dessalinizar água usando energia solar — uma tecnologia com potencial para salvar milhões de vidas. Porém, sua descoberta desperta a cobiça de grupos sombrios dispostos a tudo para roubá-la e usá-la para fins obscuros. Ao lado de seus fiéis assistentes, Dr. Elias precisa proteger o dessalinizador Solaris enquanto enfrenta sabotagens, espionagem e desafios ambientais. Nesta aventura estratégica, cada decisão importa: defenda a invenção, explore conceitos reais sobre dessalinização e energia solar e descubra quem realmente está ao seu lado na luta pelo recurso mais valioso do planeta.
                 </p>
 
@@ -45,7 +42,8 @@ export function Jogo() {
                         rel="noopener noreferrer"
                         className="
                             w-[10rem] h-[3rem] flex items-center justify-center
-                            bg-white text-[#0A1A2F] 
+                            bg-[#0A1A2F] dark:bg-white
+                            text-white dark:text-[#0A1A2F]
                             rounded-xl font-bold shadow-md
                             hover:scale-105 hover:shadow-lg
                             transition-all

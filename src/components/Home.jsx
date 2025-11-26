@@ -91,13 +91,6 @@ export function Home() {
               Saiba como funciona
             </Link>
 
-            <Link
-              to="/sistema"
-              className="px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
-              aria-label="Já possui o AquaNova"
-            >
-              Já possui o AquaNova?
-            </Link>
           </div>
         </section>
 
@@ -161,19 +154,13 @@ export function Home() {
             <div className="flex justify-center gap-4">
               <Link
                 to="/instrucoes"
-                className="px-6 py-3 rounded-lg bg-white border border-gray-200 text-gray-900 shadow hover:shadow-lg transition"
+                className="px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold shadow hover:shadow-lg transition"
                 aria-label="Saiba mais sobre instruções"
               >
                 Saiba mais
               </Link>
 
-              <Link
-                to="/sistema"
-                className="px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold shadow hover:shadow-lg transition"
-                aria-label="Link para sistema"
-              >
-                Já possui o AquaNova?
-              </Link>
+             
             </div>
           </div>
         </section>

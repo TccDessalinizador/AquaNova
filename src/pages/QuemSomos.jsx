@@ -9,25 +9,45 @@ export function QuemSomos() {
         <div>
             <Header />
 
-            <div 
+            <div
                 id="pagina"
                 className="
                     w-full
                     min-h-screen
                     pt-[6rem]
                     pb-[4rem]
-                    bg-[#0A1A2F]      /* azul */
-                    dark:bg-[#0A1A2F] /* força o azul no dark mode */
-                    text-white
+
+                    /* LIGHT MODE */
+                    bg-[#F5F7FA]
+                    text-[#1A1A1A]
+
+                    /* DARK MODE */
+                    dark:bg-[#0A1A2F]
+                    dark:text-white
+
+                    transition-colors duration-300
                 "
             >
                 {/* TÍTULO */}
-                <h1 className="text-center text-[2.4rem] font-bold drop-shadow-xl mb-[3rem]">
+                <h1
+                    className="
+                        text-center 
+                        text-[2.4rem] 
+                        font-bold 
+                        drop-shadow-xl 
+                        mb-[3rem]
+
+                        text-[#0A1A2F]
+                        dark:text-white
+
+                        transition-colors duration-300
+                    "
+                >
                     Quem somos?
                 </h1>
 
                 {/* GRID DE INTEGRANTES */}
-                <div 
+                <div
                     id="fotos"
                     className="
                         grid 
@@ -39,25 +59,10 @@ export function QuemSomos() {
                         lg:px-[6rem]
                     "
                 >
-                    <QuemSomosComp
-                        img={fotoMenocci}
-                        tittle={"Arthur Menocci"}
-                    />
-
-                    <QuemSomosComp
-                        img={modelo}
-                        tittle={"Eduardo Mariano"}
-                    />
-
-                    <QuemSomosComp
-                        img={modelo}
-                        tittle={"Guilherme Milbeyer"}
-                    />
-
-                    <QuemSomosComp
-                        img={fotoBrandassi}
-                        tittle={"Gustavo Brandassi"}
-                    />
+                    <QuemSomosComp img={fotoMenocci} tittle="Arthur Menocci" />
+                    <QuemSomosComp img={modelo} tittle="Eduardo Mariano" />
+                    <QuemSomosComp img={modelo} tittle="Guilherme Milbeyer" />
+                    <QuemSomosComp img={fotoBrandassi} tittle="Gustavo Brandassi" />
                 </div>
             </div>
         </div>
